@@ -33,3 +33,16 @@
        url("/fonts/opensanslight.woff2") format("woff2"),
        url("/fonts/opensanslight.woff") format("woff");
 }
+
+body {
+  background-color: #F2F2F2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
