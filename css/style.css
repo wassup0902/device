@@ -339,6 +339,7 @@ opacity: 1;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #F7E296;
+  z-index: 1;
 }
 
 .header-catalog-menu-show {
@@ -383,38 +384,47 @@ opacity: 1;
   opacity: 0.2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.slide1.container {
+.slide1.container,
+.slide2.container,
+.slide3.container {
   padding: 0 60px;
 }
 
 .slide1 {
   position: relative;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: -150px;
 
   background-color: transparent;
+}
+
+.slide2 {
+  position: relative;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -150px;
+
+  background-color: transparent;
+}
+
+.slide3 {
+  position: relative;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -150px;
+
+  background-color: transparent;
+}
+
+.slide-show {
+  display: flex;
 }
 
 .slide-photo {
@@ -457,14 +467,6 @@ opacity: 1;
   letter-spacing: mixed;
 }
 
-.slide-right h3 {
-  font-family: "Gilroy ExtraBold", "Gilroy", "sans-serif";
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-}
-
 .slide-right-container {
   display: flex;
   flex-wrap: wrap;
@@ -472,6 +474,14 @@ opacity: 1;
   align-items: center;
   margin-top: 65px;
   margin-bottom: 55px;
+}
+
+.slide-right-container h3 {
+  font-family: "Gilroy ExtraBold", "Gilroy", "sans-serif";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
 }
 
 .slide-right-radio {
@@ -494,7 +504,14 @@ opacity: 1;
 }
 
 .slide-block-container li {
-  max-width: 140px;
+  max-width: 160px;
+}
+
+.slide-block-container {
+  font-family: "Open Sans Light", "Open Sans", "sans-serif";
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
 }
 
 p.slide-block-container-heading {
@@ -505,9 +522,5 @@ p.slide-block-container-heading {
   letter-spacing: 0.36px;
 }
 
-.slide-block-container {
-  font-family: "Open Sans Light", "Open Sans", "sans-serif";
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: 0.13px;
-}
+
+
