@@ -515,10 +515,33 @@ p.slide-block-container-heading {
   margin-bottom: 55px;
   padding-right: 60px;
   width: 500px;
+  height: 40px;
   margin-left: 695px;
 }
 
+.slide-right-container-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 40px;
+  background-image: url("../img/background/yellow1.png");
+  background-repeat: no-repeat;
+  background-position: 0 16px;
+}
+
+.slide-right-container-button:hover,
+.slide-right-container-button:focus {
+  background-image: url(../img/background/yellow2.png);
+  background-position: 0 0;
+}
+
+.slide-right-container h3:active {
+  opacity: 0.5;
+}
+
 .slide-right-container h3 {
+  position: absolute;
   font-family: "Gilroy ExtraBold", "Gilroy", "sans-serif";
   font-size: 18px;
   line-height: 24px;
@@ -526,11 +549,49 @@ p.slide-block-container-heading {
   text-transform: uppercase;
 }
 
+
 .slide-right-radio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   width: 100px;
 
   list-style: none;
+}
+
+.radio-indicator-label {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.radio-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-indicator-label input[name="slider-radio"] + .radio-indicator {
+  position: absolute;
+  top: center;
+  left: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px black solid;
+}
+
+.radio-indicator-label input[name="slider-radio"]:checked + .radio-indicator::after {
+  content: "";
+  position: absolute;
+  top: center;
+  left: center;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 2px black solid;
 }
