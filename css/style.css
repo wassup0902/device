@@ -499,12 +499,6 @@ p.slide-block-container-heading {
   letter-spacing: 0.36px;
 }
 
-
-
-
-
-
-
 .slide-right-container {
   position: absolute;
   display: flex;
@@ -594,4 +588,61 @@ p.slide-block-container-heading {
   height: 4px;
   border-radius: 50%;
   border: 2px black solid;
+}
+
+.main-catalog {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.main-catalog a {
+  font-family: "Gilroy ExtraBold", "Gilroy", "sans-serif";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.main-catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1160px;
+
+  list-style: none;
+}
+
+.main-catalog-list li {
+  max-width: 160px;
+  min-height: 240px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.main-catalog-list li:nth-child(6n) {
+  margin-right: 0;
+}
+
+.main-catalog-list a:hover .main-catalog-list-item, 
+.main-catalog-list a:focus .main-catalog-list-item {
+  background-color: #F0C52E;
+}
+
+.main-catalog-list a:active .main-catalog-list-item {
+  background-color: #F0C52E;
+}
+
+.main-catalog-list a:active {
+  opacity: 0.5;
+}
+
+.main-catalog-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
+  background-color: #F8EBAA;
 }
