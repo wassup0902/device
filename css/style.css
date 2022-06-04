@@ -70,6 +70,10 @@ a {
   text-decoration: none;
 }
 
+a:focus {
+  outline: none;
+}
+
 .container {
   box-sizing: border-box;
   width: 1160px;
