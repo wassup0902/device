@@ -41,7 +41,7 @@ body {
   letter-spacing: 0.15px;
   word-break: break-word;
 
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
 }
 
 .visually-hidden:not(:focus):not(:active), 
@@ -695,10 +695,6 @@ p.slide-block-container-heading {
   height: 195px;
 }
 
-
-
-
-
 .delivery-guarantee-credit-navigation-container {
   display: flex;
   justify-content: space-between;
@@ -750,4 +746,38 @@ p.slide-block-container-heading {
   width: 8px;
   height: 100%;
   background-color: #000000;
+}
+
+.logos {
+  margin-top: 95px;
+}
+
+.logos ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.logos ul li {
+  width: 260px;
+  height: 100px;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  opacity: 0.5;
+}
+
+.logos ul li:hover, 
+.logos ul li:focus {
+  background-color: transparent;
+  opacity: 1;
+}
+
+.logos ul li:nth-child(4n) {
+  margin-right: 0;
 }
