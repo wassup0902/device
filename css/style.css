@@ -727,22 +727,19 @@ p.slide-block-container-heading {
   justify-content: center;
   height: 40px;
   width: 160px;
+  padding-right: 117px;
   color: #000000;
   background: url(../img/background/yellow3.png) no-repeat 0 16px;
 }
 
-.delivery-guarantee-credit-navigation a:hover,
-.delivery-guarantee-credit-navigation a:focus {
+.delivery-guarantee-credit-navigation a:hover {
   background: url(../img/background/yellow4.png) no-repeat 0 0;
 }
 
-.delivery-guarantee-credit-navigation a:active {
+.delivery-guarantee-credit-navigation a:active,
+.delivery-guarantee-credit-navigation a:focus {
   background: url(../img/background/black.png) no-repeat 0 0;
   color: #F7E184;
-}
-
-.delivery-guarantee-credit-navigation li:active {
-  background: url(../img/background/black.png) no-repeat 0 0;
 }
 
 .delivery-guarantee-credit-navigation li:not(:last-child) {
