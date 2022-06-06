@@ -829,6 +829,10 @@ p.slide-block-container-heading {
   background-color: #000000;
 }
 
+.contacts-map img {
+  background-color: #EAEAEA;
+}
+
 .about p, 
 .contacts p {
   margin-bottom: 30px;
@@ -907,3 +911,143 @@ p.slide-block-container-heading {
 .about-n-contacts-button-right {
   width: 560px;
 }
+
+.modal-map,
+.modal-writeus {
+  display: none;
+  position: fixed;
+  top: 25px;
+  right: 100px;
+  bottom: 25px;
+  left: 100px;
+  border: 1px red solid;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 1.0);
+  background-color: #CDCDCD;
+}
+
+.modal-writeus {
+  padding: 80px 100px;
+}
+
+.modal-writeus p {
+  font-family: "Gilroy ExtraBold", "Gilroy", "sans-serif";
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-writeus-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.modal-writeus-container input[name="name"],
+.modal-writeus-container input[name="email"],
+.modal-writeus textarea[name="message"] {
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #D9D9D9;
+  font-family: "Open Sans Regular", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #464646;
+}
+
+.modal-writeus textarea[name="message"] {
+  height: 155px;
+  margin-bottom: 40px;
+}
+
+.modal-writeus-button {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: "Gilroy ExtraBold", "Gilroy", "sans-serif";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  background: url("../img/background/yellow7.png") no-repeat 0 16px;
+}
+
+.modal-writeus-button:hover,
+.modal-writeus-button:focus {
+  background: url("../img/background/yellow8.png") no-repeat 0 0;
+}
+
+.modal-writeus-button:active {
+  background: url("../img/background/black2.png") no-repeat 0 0;
+  color: #F7E184;
+}
+
+.modal-writeus-left, 
+.modal-writeus-right {
+  width: 360px;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 22px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  background-color: #DFC97E;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
+
+.modal-close:hover, 
+.modal-close:focus {
+  background-color: #F0C52E;
+}
+
+.modal-close:active {
+  background-color: #FBEEC0;
+}
+
+.modal-close::before, 
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+
+  width: 40px;
+  height: 4px;
+
+  background-color: #CDCDCD;
+}
+
+.modal-close:hover::before, 
+.modal-close:focus::before, 
+.modal-close:hover::after, 
+.modal-close:focus::after {
+  background-color: #FFFFFF;
+}
+
+.modal-close:active::before, 
+.modal-close:active::after {
+  background-color: #BABABA;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
