@@ -750,6 +750,7 @@ p.slide-block-container-heading {
 
 .logos {
   margin-top: 95px;
+  margin-bottom: 90px;
 }
 
 .logos ul {
@@ -780,4 +781,129 @@ p.slide-block-container-heading {
 
 .logos ul li:nth-child(4n) {
   margin-right: 0;
+}
+
+.about-n-contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 480px;
+  min-height: 465px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 560px;
+  min-height: 465px;  
+}
+
+.about h2, 
+.contacts h2 {
+  font-family: "Gilroy ExtraBold", "Gilroy", "sans-serif";
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about h2::before, 
+.contacts h2::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 8px;
+  background-color: #000000;
+}
+
+.about p, 
+.contacts p {
+  margin-bottom: 30px;
+}
+
+.about ul {
+  font-family: "Gilroy ExtraBold", "Gilroy", "sans-serif";
+  font-size: 16px;
+  line-height: 40px;
+  list-style: none;
+}
+
+.about ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  position: relative;
+}
+
+.about ul li::before {
+  position: absolute;
+  left: 0;
+  top: center;
+
+  content: "";
+  width: 10px;
+  height: 10px;
+
+  background-image: url(../img/icon/oval.png);
+  background-repeat: no-repeat;
+}
+
+.about-n-contacts-button {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.about-n-contacts-button a {
+  font-family: "Gilroy ExtraBold", "Gilroy", "sans-serif";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 260px;
+  height: 40px;
+  background: url(../img/background/yellow5.png) no-repeat 0 16px;
+}
+
+.about-n-contacts-button a:hover, 
+.about-n-contacts-button a:focus {
+  background: url(../img/background/yellow6.png) no-repeat 0 0;
+}
+
+.about-n-contacts-button a:active {
+  background: url("../img/background/black1.png") no-repeat 0 0;
+  color: #F7E184;
+}
+
+.about-n-contacts-button-left {
+  width: 480px;
+}
+
+.about-n-contacts-button-right {
+  width: 560px;
 }
