@@ -912,6 +912,213 @@ p.slide-block-container-heading {
   width: 560px;
 }
 
+footer {
+  width: 100%;
+  min-height: 320px;
+  background-color: #464646;
+  color: #FFFFFF;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 200px;
+}
+
+.footer-left {
+  width: 325px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer-left svg {
+  margin-bottom: 30px;
+}
+
+.footer-left a:hover {
+  opacity: 0.5;
+}
+
+.footer-left a:active {
+  opacity: 0.2;
+}
+
+.footer-left path {
+  fill: #FFC600;
+}
+
+.footer-left p {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.footer-left p:after {
+position: absolute;
+bottom: 0;
+left: 0;
+
+content: "";
+width: 80px;
+height: 7px;
+background-color: #FFC600;
+}
+
+.footer-center {
+  width: 510px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-center-service, 
+.footer-center-social {
+  list-style: none;
+}
+
+.footer-center-service {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+
+.footer-center-social {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.footer-center-service li:not(:last-child) {
+  margin-right: 35px;
+}
+
+.footer-center-social a, 
+.footer-center-service a {
+  font-family: "Gilroy ExtraBold", "Gilroy", "sans-serif";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer-center-service a:hover,
+.footer-center-service a:focus {
+  opacity: 0.5;
+}
+
+.footer-center-service a:active {
+  opacity: 0.2;
+}
+
+.footer-center-social a {
+  opacity: 0.5;
+}
+
+.footer-center-social a:hover, 
+.footer-center-social a:focus {
+  opacity: 1;
+}
+
+.footer-center-social a:active {
+  opacity: 0.2;
+}
+
+.footer-right {
+  width: 323px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  letter-spacing: 0;
+}
+
+.footer-right ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-right ul li:not(:last-child) {
+  margin-right: 35px;
+}
+
+.footer-right a {
+  font-family: "Open Sans Light", "Open Sans", "sans-serif";
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+}
+
+.login-link-footer,
+.diff-link-footer,
+.basket-link-footer {
+  position: relative;
+  padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.login-link-footer::before,
+.diff-link-footer::before,
+.basket-link-footer::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  width: 13px;
+  height: 12px;
+}
+
+.login-link-footer::before {
+  background: url("../img/svg/user-yellow.svg") no-repeat left center;
+}
+
+.diff-link-footer::before {
+  background: url("../img/svg/compare-yellow.svg") no-repeat left center;
+}
+
+.basket-link-footer::before {
+  background: url("../img/svg/cart-yellow.svg") no-repeat left center;
+}
+
+.login-link-footer:hover,
+.login-link-footer:focus,
+.diff-link-footer:hover,
+.diff-link-footer:focus,
+.basket-link-footer:hover,
+.basket-link-footer:focus {
+  opacity: 1;
+}
+
+.login-link-footer:active,
+.diff-link-footer:active,
+.basket-link-footer:active {
+  opacity: 0.2;
+}
+
+.footer-right-logo:hover, 
+.footer-right-logo:focus {
+  opacity: 0.5;
+}
+
+.footer-right-logo:active {
+  opacity: 0.2;
+}
+
 .modal-map,
 .modal-writeus {
   display: none;
@@ -961,6 +1168,22 @@ p.slide-block-container-heading {
 .modal-writeus textarea[name="message"] {
   height: 155px;
   margin-bottom: 40px;
+}
+
+.modal-writeus-container input[name="name"]:focus, 
+.modal-writeus-container input[name="email"]:focus, 
+.modal-writeus textarea[name="message"]:focus {
+  background-color: #F5F5F5;
+  outline: none;
+  border: 3px #F5DA7C solid;
+}
+
+.modal-writeus-container input[name="name"]:invalid, 
+.modal-writeus-container input[name="email"]:invalid, 
+.modal-writeus textarea[name="message"]:invalid {
+  background-color: #F0E2E2;
+  outline: none;
+  border: none;
 }
 
 .modal-writeus-button {
@@ -1050,4 +1273,3 @@ p.slide-block-container-heading {
 .modal-close::after {
   transform: rotate(-45deg);
 }
-
