@@ -184,8 +184,19 @@ opacity: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 270px;
 
   list-style: none;
+}
+
+.main-header-list-login li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.login-out {
+  color: #000000;
+  font: inherit;
+  opacity: 0.5;
 }
 
 .login-link,
@@ -1118,6 +1129,222 @@ background-color: #FFC600;
 .footer-right-logo:active {
   opacity: 0.2;
 }
+
+/**/
+.catalog-navigation {
+  position: relative;
+  margin-top: 35px;
+}
+
+.catalog-navigation.container {
+  padding-left: 60px;
+}
+
+.catalog-navigation a {
+  opacity: 0.5;
+  color: #000000;
+  font-family: "Open Sans Light", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  
+}
+
+.catalog-navigation a:hover, 
+.catalog-navigation a:focus {
+  opacity: 1;
+}
+
+.catalog-navigation a:active {
+  opacity: 0.2;
+}
+
+.catalog-navigation h2 {
+  font-family: "Gilroy ExtraBold", "Gilroy", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+  margin-bottom: 25px;
+}
+
+.catalog-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+.catalog-navigation ul li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.catalog-navigation ul li:not(:last-child) {
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+.catalog-navigation ul li:not(:last-child)::after {
+  position: absolute;
+  right: 0;
+  content: "";
+
+  width: 6px;
+  height: 10px;
+  background: url("../img/svg/nav-arrow.svg") no-repeat right center;
+}
+
+.catalog-content-filter {
+  width: 470px;
+  background-color: #EBEBEB;
+  box-sizing: border-box;
+}
+
+.catalog-content-filter-header {
+  display: flex;
+  align-items: center;
+  background-color: #DCDCDC;
+  height: 70px;
+  width: 100%;
+  font-family: "Gilroy ExtraBold", Gilroy, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  padding-left: 150px;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+}
+
+.catalog-content-filter-color, 
+.catalog-content-filter-bluetooth {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.catalog-content-filter-color ul li:last-child, 
+.catalog-content-filter-bluetooth ul li:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-content-filter-container {
+  margin-left: 150px;
+}
+
+.catalog-content-filter-container p {
+  position: relative;
+  padding-top: 10px;
+  font-family: "Gilroy ExtraBold", Gilroy, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  margin-bottom: 25px;
+}
+
+input[type="range"] {
+  margin-bottom: 45px;
+}
+
+.catalog-content-filter-container p::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.catalog-content-filter-container label {
+  font-family: "Open Sans Light", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 39px;
+  letter-spacing: 0.14px;
+}
+
+.catalog-content-filter-checkbox-container, 
+.catalog-content-filter-radio-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.catalog-content-filter-checkbox-container input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  box-sizing: border-box;
+  background: url(../img/svg/checkbox-off.svg) no-repeat left center;
+}
+
+.catalog-content-filter-radio-container input[type="radio"] + .radio-indicator {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: url(../img/svg/radio-off.svg) no-repeat left center;
+}
+
+.catalog-content-filter-checkbox-container input[type="checkbox"]:checked + .checkbox-indicator {
+  background: url(../img/svg/checkbox-on.svg) no-repeat left center;
+}
+
+.catalog-content-filter-radio-container input[type="radio"]:checked + .radio-indicator {
+  background: url(../img/svg/radio-on.svg) no-repeat left center;
+}
+
+.catalog-content-filter-checkbox-container input[type="checkbox"]:hover + .checkbox-indicator, 
+.catalog-content-filter-checkbox-container input[type="checkbox"]:focus + .checkbox-indicator, 
+.catalog-content-filter-radio-container input[type="radio"]:hover + .radio-indicator,
+.catalog-content-filter-radio-container input[type="radio"]:focus + .radio-indicator {
+  opacity: 0.5;
+}
+
+.catalog-content-filter-checkbox-container input[type="checkbox"]:active + .checkbox-indicator, 
+.catalog-content-filter-radio-container input[type="radio"]:active + .radio-indicator {
+  opacity: 1;
+}
+
+.catalog-content-filter-checkbox-container input[type="checkbox"]:disabled + .checkbox-indicator, 
+.catalog-content-filter-checkbox-container.disabled, 
+.catalog-content-filter-radio-container input[type="radio"]:disabled + .radio-indicator, 
+.catalog-content-filter-radio-container.disabled {
+  opacity: 0.2;
+}
+
+.catalog-content-filter-button {
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  background: url(../img/background/yellow7.png) no-repeat 0 16px;
+  text-transform: uppercase;
+  font-family: "Gilroy ExtraBold", Gilroy, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+}
+
+.catalog-content-filter-button:hover, 
+.catalog-content-filter-button:focus {
+  background: url("../img/background/yellow8.png") no-repeat 0 0;
+}
+
+.catalog-content-filter-button:active {
+  background: url("../img/background/black2.png") no-repeat 0 0;
+  color: #F7E184;
+
+}
+
+/**/
 
 .modal-map,
 .modal-writeus {
