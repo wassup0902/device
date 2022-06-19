@@ -1,0 +1,49 @@
+.list-login {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+  font-family: "Open Sans Light", "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  word-break: break-word;
+
+  list-style: none;
+}
+
+.list-login li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.list-login__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 25px;
+}
+
+.list-login__item a {
+  font: inherit;
+  color: #000000; 
+}
+
+.list-login__item:hover,
+.list-login__item:focus {
+  opacity: 0.5;
+}
+
+.list-login__item:active {
+  opacity: 0.2;
+}
+
+.list-login__item_link::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  width: 13px;
+  height: 12px;
+
+  background: url("user.svg") no-repeat left center;
+}

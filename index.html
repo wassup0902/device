@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<html class="page" lang="ru">
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -7,51 +7,77 @@
 		<title>Девайс</title>
 	</head>
 
-	<body>
-		<header class="container">
-
+	<body class="page__body">
+		<header class="page-header">
 			<a href="index.html">
-				<svg class="main-header-logo" width="164" height="36" viewBox="0 0 164 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<rect width="164" height="36" fill="white"/>
-				<path fill-rule="evenodd" clip-rule="evenodd" d="M14.32 1.4C18.96 1.4 22.84 3.00798 25.96 6.224C29.08 9.44002 30.64 13.432 30.64 18.2C30.64 22.968 29.08 26.96 25.96 30.176C22.84 33.392 18.96 35 14.32 35H0.880005V1.4H14.32ZM14.32 27.608C16.976 27.608 19.128 26.752 20.776 25.04C22.424 23.328 23.248 21.048 23.248 18.2C23.248 15.352 22.424 13.072 20.776 11.36C19.128 9.64799 16.976 8.792 14.32 8.792H8.56V27.608H14.32ZM43.12 27.608H56.56V35H35.44V1.4H56.32V8.792H43.12V14.36H55.12V21.656H43.12V27.608ZM69.424 35L58.48 1.4H66.88L74.32 26.12L81.76 1.4H90.16L79.216 35H69.424ZM93.52 1.4H101.2V35H93.52V1.4ZM123.472 35.672C118.448 35.672 114.28 34 110.968 30.656C107.656 27.312 106 23.16 106 18.2C106 13.24 107.656 9.08802 110.968 5.744C114.28 2.39998 118.448 0.728001 123.472 0.728001C126.48 0.728001 129.264 1.42399 131.824 2.816C134.384 4.20801 136.4 6.10399 137.872 8.504L131.248 12.344C130.512 11.032 129.456 10.016 128.08 9.296C126.704 8.576 125.168 8.216 123.472 8.216C120.496 8.216 118.12 9.12799 116.344 10.952C114.568 12.776 113.68 15.192 113.68 18.2C113.68 21.208 114.568 23.624 116.344 25.448C118.12 27.272 120.496 28.184 123.472 28.184C125.168 28.184 126.712 27.816 128.104 27.08C129.496 26.344 130.544 25.336 131.248 24.056L137.872 27.896C136.432 30.296 134.432 32.192 131.872 33.584C129.312 34.976 126.512 35.672 123.472 35.672ZM149.632 27.608H163.072V35H141.952V1.4H162.832V8.792H149.632V14.36H161.632V21.656H149.632V27.608Z" fill="black"/>
-				</svg>
+				<img class="page-header-logo logo" src="source/logo/logo.svg" width="164" height="36">
 			</a>
 
-			<section class="main-header-wrapper1">
-				<input type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-				<button class="search-button" type="button">Найти</button>
-				<ul class="main-header-list-login">
-					<li><a class="login-link" href="#">Войти</a></li>
+			<section class="page-header-wrapper1">
+				<div class="page-header-left search">
+					<input class="search__input" type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+					<button class="search__button" type="button">Найти</button>
+				</div>
+
+				<ul class="list-login">
+					<li class="list-login__item list-login__item_link"><a href="#">Войти</a></li>
 				</ul>
-				<ul class="main-header-list-buy">
-					<li><a class="diff-link" href="#">Сравнить</a></li>
-					<li><a class="basket-link" href="#">Корзина</a></li>
+
+				<ul class="page-header-list-buy list-buy">
+					<li class="list-buy__item list-buy__item_compare"><a href="#">Сравнить</a></li>
+					<li class="list-buy__item list-buy__item_cart"><a href="#">Корзина</a></li>
 				</ul>
 			</section> 
 
-			<section class="main-header-wrapper2">
-				<a class="main-header-catalog" href="#">Каталог товаров</a>
+			<section class="page-header-catalog">
+				<a class="page-header-catalog__show-catalog js-catalog" href="#">Каталог товаров</a>
+
+				<ul class="page-header-catalog__list-first">
+					<li><a href="#">Виртуальная реальность</a></li>
+					<li><a href="#">Фитнес-браслеты</a></li>
+				</ul>
+
+				<ul class="page-header-catalog__list-second">
+					<li><a href="catalog.html">Моноподы для селфи</a></li>
+					<li><a href="#">Умные часы</a></li>
+					<li><a href="#">Квадрокоптеры</a></li>
+				</ul>
+
+				<ul class="page-header-catalog__list-third">
+					<li><a href="#">Экшн-камеры</a></li>
+				</ul>
+			</section>
+
+
+
 				<ul class="delivery-guarantee-list">
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантии</a></li>
+					<li class="delivery-guarantee-list__item"><a href="#">Доставка</a></li>
+					<li class="delivery-guarantee-list__item"><a href="#">Гарантии</a></li>
 				</ul>
 
 				<ul class="contacts-list">
-					<li><a href="#">Контакты</a></li>
+					<li class="contacts-list__item"><a href="#">Контакты</a></li>
 				</ul>
 			</section>
 		</header>
+
+
+
+
+
 
 		<section class="container header-catalog-menu">
 			<ul class="header-catalog-menu-list-first">
 				<li><a href="#">Виртуальная реальность</a></li>
 				<li><a href="#">Фитнес-браслеты</a></li>
 			</ul>
+
 			<ul class="header-catalog-menu-list-second">
 				<li><a href="catalog.html">Моноподы для селфи</a></li>
 				<li><a href="#">Умные часы</a></li>
 				<li><a href="#">Квадрокоптеры</a></li>
 			</ul>
+
 			<ul class="header-catalog-menu-list-third">
 				<li><a href="#">Экшн-камеры</a></li>
 			</ul>
@@ -239,7 +265,7 @@
 			<div class="container">
 				<div class="footer-left">
 					<a href="index.html">
-						<svg width="164" height="36" viewBox="0 0 164 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg class="footer-logo" width="164" height="36" viewBox="0 0 164 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect width="164" height="36" fill="transparent"/>
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.32 1.4C18.96 1.4 22.84 3.00798 25.96 6.224C29.08 9.44002 30.64 13.432 30.64 18.2C30.64 22.968 29.08 26.96 25.96 30.176C22.84 33.392 18.96 35 14.32 35H0.880005V1.4H14.32ZM14.32 27.608C16.976 27.608 19.128 26.752 20.776 25.04C22.424 23.328 23.248 21.048 23.248 18.2C23.248 15.352 22.424 13.072 20.776 11.36C19.128 9.64799 16.976 8.792 14.32 8.792H8.56V27.608H14.32ZM43.12 27.608H56.56V35H35.44V1.4H56.32V8.792H43.12V14.36H55.12V21.656H43.12V27.608ZM69.424 35L58.48 1.4H66.88L74.32 26.12L81.76 1.4H90.16L79.216 35H69.424ZM93.52 1.4H101.2V35H93.52V1.4ZM123.472 35.672C118.448 35.672 114.28 34 110.968 30.656C107.656 27.312 106 23.16 106 18.2C106 13.24 107.656 9.08802 110.968 5.744C114.28 2.39998 118.448 0.728001 123.472 0.728001C126.48 0.728001 129.264 1.42399 131.824 2.816C134.384 4.20801 136.4 6.10399 137.872 8.504L131.248 12.344C130.512 11.032 129.456 10.016 128.08 9.296C126.704 8.576 125.168 8.216 123.472 8.216C120.496 8.216 118.12 9.12799 116.344 10.952C114.568 12.776 113.68 15.192 113.68 18.2C113.68 21.208 114.568 23.624 116.344 25.448C118.12 27.272 120.496 28.184 123.472 28.184C125.168 28.184 126.712 27.816 128.104 27.08C129.496 26.344 130.544 25.336 131.248 24.056L137.872 27.896C136.432 30.296 134.432 32.192 131.872 33.584C129.312 34.976 126.512 35.672 123.472 35.672ZM149.632 27.608H163.072V35H141.952V1.4H162.832V8.792H149.632V14.36H161.632V21.656H149.632V27.608Z" fill="black"/>
 						</svg>
@@ -253,6 +279,7 @@
 						<li><a href="#">Гарантия</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
+
 					<ul class="footer-center-social">
 						<li><a href="#"><img src="img/svg/fb.svg"><span class="visually-hidden">Фейсбук</span></a></li>
 						<li><a href="#"><img src="img/svg/instagram.svg"><span class="visually-hidden">Инстаграм</span></a></li>

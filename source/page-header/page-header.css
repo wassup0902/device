@@ -1,0 +1,29 @@
+.page-header {
+  position: relative;
+  min-height: 300px;
+  padding: 50px 60px;
+  margin-top: 40px;
+
+  background-color: #F9EA80;
+}
+
+.page-header-logo {
+  position: absolute;
+  top: -17px;
+  left: 60px;
+}
+
+.page-header-wrapper1 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: -10px;
+}
+
+.page-header-left {
+  width: 540px;
+  box-sizing: border-box;
+}
+
+.page-header-list-buy {
+  margin-left: auto;
+}
