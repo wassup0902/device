@@ -1,0 +1,17 @@
+@import url("_hover/list-buy__item_hover.css");
+@import url("_focus/list-buy__item_focus.css");
+@import url("_active/list-buy__item_active.css");
+@import url("_cart/list-buy__item_cart.css");
+@import url("_compare/list-buy__item_compare.css");
+
+.list-buy__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 25px;
+}
+
+.list-buy__item a {
+  font: inherit;
+  color: #000000; 
+}

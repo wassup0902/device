@@ -1,0 +1,20 @@
+@import url("_hover/search__button_hover.css");
+@import url("_focus/search__button_focus.css");
+@import url("_active/search__button_active.css");
+
+.search__button {
+  box-sizing: border-box;
+  width: 85px;
+  height: 50px;
+
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+
+  background-color: transparent;
+  border: 2px #000000 solid;
+
+  cursor: pointer;
+
+  visibility: hidden;
+}

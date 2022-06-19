@@ -1,3 +1,5 @@
+@import url("__item/list-buy__item.css");
+
 .list-buy {
   display: flex;
   flex-wrap: wrap;
@@ -16,47 +18,4 @@
 
 .list-buy li:not(:last-child) {
   margin-right: 30px;
-}
-
-.list-buy__item {
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding-left: 25px;
-}
-
-.list-buy__item a {
-  font: inherit;
-  color: #000000; 
-}
-
-.list-buy__item:hover,
-.list-buy__item:focus {
-  opacity: 0.5;
-}
-
-.list-buy__item:active {
-  opacity: 0.2;
-}
-
-.list-buy__item_compare::before {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  width: 13px;
-  height: 12px;
-
-  background: url("compare.svg") no-repeat left center;
-}
-
-.list-buy__item_cart::before {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  width: 13px;
-  height: 12px;
-
-  background: url("cart.svg") no-repeat left center;
 }
