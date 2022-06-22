@@ -10,6 +10,7 @@
   background-color: transparent;
   background: url("search.svg") no-repeat left center;
   outline: none;
+  border: 0;
 
   opacity: 0.5;
 }

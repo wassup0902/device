@@ -1,4 +1,4 @@
-.page-header {
+.index-header {
   position: relative;
   min-height: 300px;
   padding: 50px 60px;
@@ -7,23 +7,23 @@
   background-color: #F9EA80;
 }
 
-.page-header-logo {
+.index-header-logo {
   position: absolute;
   top: -17px;
   left: 60px;
 }
 
-.page-header-wrapper1 {
+.index-header-wrapper1 {
   display: flex;
   flex-wrap: nowrap;
   margin-top: -10px;
 }
 
-.page-header-left {
+.index-header-left {
   width: 540px;
   box-sizing: border-box;
 }
 
-.page-header-list-buy {
+.index-header-list-buy {
   margin-left: auto;
 }
