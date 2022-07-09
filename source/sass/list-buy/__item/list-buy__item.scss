@@ -1,0 +1,11 @@
+.list-buy__item {
+  display:      flex;
+  align-items:  center;
+  position:     relative;
+  padding-left: 25px;
+}
+
+.list-buy__item a {
+  font:         inherit;
+  color:        #000000;
+}

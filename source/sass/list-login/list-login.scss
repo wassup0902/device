@@ -1,0 +1,13 @@
+.list-login {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+  font: inherit;
+
+  list-style: none;
+}
+
+.list-login li:not(:last-child) {
+  margin-right: 20px;
+}

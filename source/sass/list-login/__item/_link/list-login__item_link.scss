@@ -1,0 +1,10 @@
+.list-login__item_link::before {
+  content:    "";
+
+  position: absolute;
+  left:       0;
+  width:      13px;
+  height:     12px;
+
+  background: url("./list-login/__item/_link/user.svg") no-repeat left center;
+}

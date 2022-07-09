@@ -1,0 +1,14 @@
+.list-buy {
+  display:         flex;
+  flex-wrap:       wrap;
+  justify-content: space-between;
+  flex-shrink:     0;
+
+  font:            inherit;
+
+  list-style:      none;
+}
+
+.list-buy li:not(:last-child) {
+  margin-right:    30px;
+}
