@@ -1,4 +1,4 @@
-.list-buy {
+.contacts-list {
   display:         flex;
   flex-wrap:       wrap;
   justify-content: flex-end;
@@ -8,8 +8,8 @@
 
   list-style:      none;
 
-  li:not(:last-child) {
-  margin-right:    30px;
+  li:not(:first-child) {
+  margin-left:     10px;
   }
 
   li {

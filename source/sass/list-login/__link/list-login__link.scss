@@ -1,0 +1,13 @@
+.list-login__link {
+  position:     relative;
+  display:      flex;
+  align-items:  center;
+  padding-left: 25px;
+
+  font: {
+    family:         "Open Sans Light", "Open Sans", sans-serif;
+    size:           15px;
+  }
+  line-height:      30px;
+  color:        #000000;
+}

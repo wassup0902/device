@@ -2,6 +2,10 @@
   display: flex;
   flex-shrink: 0;
 
-  font: inherit;
+  font: {
+    family:         "Open Sans Light", "Open Sans", sans-serif;
+    size:           15px;
+  }
+  line-height:      30px;
   color: #000000;
 }

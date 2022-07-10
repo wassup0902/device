@@ -1,0 +1,10 @@
+.list-buy__link_cart::before {
+  content:    "";
+
+  position:   absolute;
+  left:       0;
+  width:      13px;
+  height:     12px;
+
+  background: url("./list-buy/__link/_cart/_before/cart.svg") no-repeat left center;
+}

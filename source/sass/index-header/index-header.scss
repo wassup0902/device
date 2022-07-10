@@ -5,33 +5,56 @@
   margin-top:       40px;
 
   background-color: #F9EA80;
-}
 
-.index-header-logo {
-  position:         absolute;
-  top:              -17px;
-  left:             60px;
-}
+  &-logo {
+    position:         absolute;
+    top:              -17px;
+    left:             60px;
+  }
 
-.index-header-wrapper1 {
-  display:          flex;
-  flex-wrap:        nowrap;
-  margin-top:       -10px;
-}
+  &-delivery-guarantee-list {
+    max-width: 280px;
+  }
 
-.index-header-left {
-  width:            540px;
-  box-sizing:       border-box;
-}
+  &-contacts-list {
+    max-width: 210px;
+  }
 
-.index-header-list-buy {
-  width:           220px;
-  margin:          0;
-  padding:         0;
-  margin-left:     auto;
-}
+  &-wrapper1 {
+    display:          flex;
+    flex-wrap:        nowrap;
+    align-items:      center;
+    margin-top:       -10px;
+    margin-bottom:    25px;
+  }
 
-.index-header-list-login {
-  margin:         0;
-  padding:        0;
+  &-left {
+    width:            540px;
+    box-sizing:       border-box;
+  }
+
+  &-list-buy {
+    max-width:       210px;
+    margin:          0;
+    padding:         0;
+    margin-left:     auto;
+  }
+
+  &-list-login {
+    max-width:      280px;
+    margin:         0;
+    padding:        0;
+  }
+
+  &-catalog {
+    .wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .wrapper2 {
+      display: none;
+      flex-wrap: nowrap;
+    }
+  }
 }

@@ -1,15 +1,14 @@
-.list-buy {
+.delivery-guarantee-list {
   display:         flex;
   flex-wrap:       wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin:          0;
   padding:         0;
-  margin-left:     auto;
 
   list-style:      none;
 
-  li:not(:last-child) {
-  margin-right:    30px;
+  li:not(:last-child){
+    margin-right:  40px;
   }
 
   li {
