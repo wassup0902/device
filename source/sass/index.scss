@@ -1,6 +1,7 @@
 @import "fonts.scss";
 
-@import "index-body/index-body.scss";
+@import "mixes/index-body.scss";
+@import "body/body.scss";
 
 @import "g-visually-hidden/visually-hidden.scss";
 
@@ -9,56 +10,75 @@
 @import "g-a/a.scss";
 @import "g-a/_focus/a_focus.scss";
 
-@import "index-header/index-header.scss";
+@import "mixes/index-header.scss";
+@import "header/header.scss";
 
-@import "search/search.scss";
-@import "search/__button/search__button.scss";
-@import "search/__button/_hover/search__button_hover.scss";
-@import "search/__button/_focus/search__button_focus.scss";
-@import "search/__button/_active/search__button_active.scss";
-@import "search/__input/search__input.scss";
-@import "search/__input/_hover/search__input_hover.scss";
-@import "search/__input/_focus/search__input_focus.scss";
-
+@import "mixes/header-logo.scss";
 @import "logo/_hover/logo_hover.scss";
 @import "logo/_focus/logo_focus.scss";
 @import "logo/_active/logo_active.scss";
 
-@import "list-buy/list-buy.scss";
-@import "list-buy/__link/list-buy__link.scss";
-@import "list-buy/__link/_cart/_before/list-buy__link_cart_before.scss";
-@import "list-buy/__link/_compare/_before/list-buy__link_compare_before.scss";
-@import "list-buy/__link/_hover/list-buy__link_hover.scss";
-@import "list-buy/__link/_focus/list-buy__link_focus.scss";
-@import "list-buy/__link/_active/list-buy__link_active.scss";
+@import "mixes/search-login-buy-container.scss";
+@import "search/search.scss";
+@import "mixes/index-left-side.scss";
+@import "search/__input/search__input.scss";
+@import "search/__input/_hover/search__input_hover.scss";
+@import "search/__input/_focus/search__input_focus.scss";
+@import "search/__button/search__button.scss";
+@import "search/__button/_hover/search__button_hover.scss";
+@import "search/__button/_focus/search__button_focus.scss";
+@import "search/__button/_active/search__button_active.scss";
 
-@import "list-login/list-login.scss";
-@import "list-login/__link/list-login__link.scss";
-@import "list-login/__link/_before/list-login__link_before.scss";
-@import "list-login/__link/_hover/list-login__link_hover.scss";
-@import "list-login/__link/_focus/list-login__link_focus.scss";
-@import "list-login/__link/_active/list-login__link_active.scss";
+@import "login-buy-list/login-buy-list.scss";
+@import "login-buy-list/__link/login-buy-list__link.scss";
+@import "login-buy-list/__link/_login/_before/login-buy-list__link_login_before.scss";
+@import "login-buy-list/__link/_cart/_before/login-buy-list__link_cart_before.scss";
+@import "login-buy-list/__link/_compare/_before/login-buy-list__link_compare_before.scss";
+@import "login-buy-list/__link/_hover/login-buy-list__link_hover.scss";
+@import "login-buy-list/__link/_focus/login-buy-list__link_focus.scss";
+@import "login-buy-list/__link/_active/login-buy-list__link_active.scss";
 
-@import "show-catalog/show-catalog.scss";
-@import "show-catalog/_hover/show-catalog_hover.scss";
-@import "show-catalog/_focus/show-catalog_focus.scss";
-@import "show-catalog/_active/show-catalog_active.scss";
+@import "mixes/catalog-menu.scss";
+@import "navigation-menu/navigation-menu.scss";
+@import "navigation-menu/__show-catalog/navigation-menu__show-catalog.scss";
+@import "navigation-menu/__show-catalog/_hover/navigation-menu__show-catalog_hover.scss";
+@import "navigation-menu/__show-catalog/_focus/navigation-menu__show-catalog_focus.scss";
+@import "navigation-menu/__show-catalog/_active/navigation-menu__show-catalog_active.scss";
+@import "navigation-menu/__show-catalog/_after/navigation-menu__show-catalog_after.scss";
+@import "navigation-menu/__item/navigation-menu__item.scss";
+@import "navigation-menu/__link/navigation-menu__link.scss";
+@import "navigation-menu/__link/_hover/navigation-menu__link_hover.scss";
+@import "navigation-menu/__link/_focus/navigation-menu__link_focus.scss";
+@import "navigation-menu/__link/_active/navigation-menu__link_active.scss";
 
-@import "delivery-guarantee-list/delivery-guarantee-list.scss";
-@import "delivery-guarantee-list/__link/delivery-guarantee-list__link.scss";
-@import "delivery-guarantee-list/__link/_hover/delivery-guarantee-list__link_hover.scss";
-@import "delivery-guarantee-list/__link/_focus/delivery-guarantee-list__link_focus.scss";
-@import "delivery-guarantee-list/__link/_active/delivery-guarantee-list__link_active.scss";
+@import "mixes/catalog-menu-column.scss";
+@import "mixes/catalog-menu-column-wm.scss";
+@import "navigation-menu-sublist/navigation-menu-sublist.scss";
+@import "navigation-menu-sublist/__link/navigation-menu-sublist__link.scss";
+@import "navigation-menu-sublist/__link/_hover/navigation-menu-sublist__link_hover.scss";
+@import "navigation-menu-sublist/__link/_focus/navigation-menu-sublist__link_focus.scss";
+@import "navigation-menu-sublist/__link/_active/navigation-menu-sublist__link_active.scss";
 
-@import "contacts-list/contacts-list.scss";
-@import "contacts-list/__link/contacts-list__link.scss";
-@import "contacts-list/__link/_hover/contacts-list__link_hover.scss";
-@import "contacts-list/__link/_focus/contacts-list__link_focus.scss";
-@import "contacts-list/__link/_active/contacts-list__link_active.scss";
-
-@import "header-catalog-list-first/header-catalog-list-first.scss";
-@import "header-catalog-list-first/__link/header-catalog-list-first__link.scss";
-@import "header-catalog-list-second/header-catalog-list-second.scss";
-@import "header-catalog-list-second/__link/header-catalog-list-second__link.scss";
-@import "header-catalog-list-third/header-catalog-list-third.scss";
-@import "header-catalog-list-third/__link/header-catalog-list-third__link.scss";
+@import "mixes/slider-container.scss";
+@import "mixes/slider-left-side.scss";
+@import "mixes/slider-right-side.scss";
+@import "slider/slider.scss";
+@import "slider/__item/slider__item.scss";
+@import "slider/__item/_show/slider__item_show.scss";
+@import "slider/__counter/slider__counter.scss";
+@import "slider/__counter/_before/slider__counter_before.scss";
+@import "slider/__title/slider__title.scss";
+@import "slider/__description/slider__description.scss";
+@import "slider/__parametres-name/slider__parametres-name.scss";
+@import "slider/__parametres/slider__parametres.scss";
+@import "slider/__parametres-description/slider__parametres-description.scss";
+@import "more-link/more-link.scss";
+@import "more-link/_after/more-link_after.scss";
+@import "mixes/slider-more-container.scss";
+@import "more-link/_hover/more-link_hover.scss";
+@import "more-link/_focus/more-link_focus.scss";
+@import "more-link/_active/more-link_active.scss";
+@import "slider/__radio/slider__radio.scss";
+@import "radio-indicator/__label/radio-indicator__label.scss";
+@import "radio-indicator/__button/radio-indicator__button.scss";
+@import "radio-indicator/__button/_checked/radio-indicator__button_checked.scss";

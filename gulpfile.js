@@ -109,7 +109,28 @@ gulp.task("copyCssImages", function() { //копирование картино�
   .pipe(gulp.dest("build/css"))
 });
 
-gulp.task("build", gulp.series("clean", gulp.parallel("copyHtml", "stylesIndex", "stylesNormalize", "copyFonts", "copyCssImages")));
+gulp.task("copyImages", function() { //копирование картинок подключаемых в html и оптимизация
+  return gulp.src("source/img/**/*.{svg,png,jpg}",
+    {
+      base: "source",
+      since: gulp.lastRun("copyImages")
+    })
+  .pipe(newer("build"))
+  .pipe(imagemin([
+    imagemin.gifsicle({interlaced: true}),
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.mozjpeg({quality: 75, progressive: true}),
+    imagemin.svgo({
+      plugins: [
+        {removeViewBox: true},
+        {cleanupIDs: false}
+      ]
+    })
+  ]))
+  .pipe(gulp.dest("build"))
+});
+
+gulp.task("build", gulp.series("clean", gulp.parallel("copyHtml", "stylesIndex", "stylesNormalize", "copyFonts", "copyCssImages", "copyImages")));
 
 gulp.task("watch", function() {
   gulp.watch("{source/sass/**/*.scss, !source/sass/normalize.scss}", gulp.series("stylesIndex"));
@@ -119,6 +140,8 @@ gulp.task("watch", function() {
   gulp.watch("source/**/*.html", gulp.series("copyHtml"));
 
   gulp.watch("source/sass/**/*.{svg,png}", gulp.series("copyCssImages"));
+
+  gulp.watch("source/img/**/*.{svg,png,jpg}", gulp.series("copyImages"));
 
   gulp.watch("source/fonts/**/*.{woff,woff2}", gulp.series("copyFonts"));
 });

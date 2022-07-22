@@ -1,0 +1,8 @@
+.radio-indicator__button + .radio-indicator {
+  position:   absolute;
+
+  width:      12px;
+  height:     12px;
+
+  background: url("./radio-indicator/__button/slider-radio-off.svg") no-repeat top left;
+}

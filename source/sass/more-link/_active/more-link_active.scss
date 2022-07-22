@@ -1,0 +1,10 @@
+.more-link:active {
+  color:    rgba(0, 0, 0, 0.3);
+
+  &::after {
+    left:   0;
+    top:    0;
+
+    height: 100%;
+  }
+}
