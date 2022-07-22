@@ -1,0 +1,18 @@
+.dgc-navigation__link {
+  position:        relative;
+
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  width:           160px;
+  height:          40px;
+
+  font: {
+    family:        "Gilroy ExtraBold", Gilroy, sans-serif;
+    size:          18px;
+  }
+  text-transform:  uppercase;
+  line-height:     24px;
+  letter-spacing:  0.2em;
+  color:           #000000;
+}

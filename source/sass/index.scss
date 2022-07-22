@@ -82,3 +82,18 @@
 @import "radio-indicator/__label/radio-indicator__label.scss";
 @import "radio-indicator/__button/radio-indicator__button.scss";
 @import "radio-indicator/__button/_checked/radio-indicator__button_checked.scss";
+
+@import "catalog-list/catalog-list.scss";
+@import "catalog-list/__img-container/catalog-list__img-container.scss";
+@import "catalog-list/__link/catalog-list__link.scss";
+@import "catalog-list/__img-container/_hover/catalog-list__img-container_hover.scss";
+@import "catalog-list/__img-container/_focus/catalog-list__img-container_focus.scss";
+@import "catalog-list/__img-container/_active/catalog-list__img-container_active.scss";
+
+@import "dgc-navigation/dgc-navigation.scss";
+@import "dgc-navigation/__link/dgc-navigation__link.scss";
+@import "dgc-navigation/__item/dgc-navigation__item.scss";
+@import "dgc-navigation/__link/_after/dgc-navigation__link_after.scss";
+@import "dgc-navigation/__link/_hover/dgc-navigation__link_hover.scss";
+@import "dgc-navigation/__link/_focus/dgc-navigation__link_focus.scss";
+@import "dgc-navigation/__link/_active/dgc-navigation__link_active.scss";

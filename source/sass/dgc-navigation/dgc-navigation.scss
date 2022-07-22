@@ -1,0 +1,14 @@
+.dgc-navigation {
+  display:          flex;
+  flex-wrap:        wrap;
+  flex-direction:   column;
+  justify-content:  center;
+  margin:           0;
+  padding:          0;
+  height:           319px;
+  width:            278px;
+
+  border-right:     7px #000000 solid;
+
+  list-style:       none;
+}

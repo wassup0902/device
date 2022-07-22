@@ -130,7 +130,15 @@ gulp.task("copyImages", function() { //копирование картинок �
   .pipe(gulp.dest("build"))
 });
 
-gulp.task("build", gulp.series("clean", gulp.parallel("copyHtml", "stylesIndex", "stylesNormalize", "copyFonts", "copyCssImages", "copyImages")));
+gulp.task("scripts", function () {
+  return gulp.src("source/js/**/*.js")
+  .pipe(terser())
+  //.pipe(rename("*.min.js"))
+  .pipe(gulp.dest("build/js"))
+  .pipe(browsersync.stream())
+});
+
+gulp.task("build", gulp.series("clean", gulp.parallel("copyHtml", "stylesIndex", "stylesNormalize", "copyFonts", "copyCssImages", "copyImages", "scripts")));
 
 gulp.task("watch", function() {
   gulp.watch("{source/sass/**/*.scss, !source/sass/normalize.scss}", gulp.series("stylesIndex"));

@@ -1,0 +1,14 @@
+.dgc-navigation__link::after {
+  content:          "";
+
+  position:         absolute;
+  left:             0;
+  top:              16px;
+
+  width:            160px;
+  height:           8px;
+
+  background-color: #F0C52E;
+
+  z-index:          -1;
+}

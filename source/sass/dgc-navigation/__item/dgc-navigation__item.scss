@@ -1,0 +1,5 @@
+.dgc-navigation__item {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
