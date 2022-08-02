@@ -1,20 +1,20 @@
-const gulp = require("gulp");
-const plumber = require("gulp-plumber");
-const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass")(require("sass"));
-const postcss = require("gulp-postcss");
+const gulp         = require("gulp");
+const plumber      = require("gulp-plumber");
+const sourcemap    = require("gulp-sourcemaps");
+const sass         = require("gulp-sass")(require("sass"));
+const postcss      = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const csso = require("gulp-csso");
-const rename = require("gulp-rename");
-const browsersync = require("browser-sync").create();
-const terser = require("gulp-terser");
-const imagemin = require("gulp-imagemin");
-const webp = require("gulp-webp");
-const svgstore = require("gulp-svgstore");
-const del = require("del");
-const debug = require("gulp-debug");
-const newer = require("gulp-newer");
-const notify = require("gulp-notify");
+const csso         = require("gulp-csso");
+const rename       = require("gulp-rename");
+const browsersync  = require("browser-sync").create();
+const terser       = require("gulp-terser");
+const imagemin     = require("gulp-imagemin");
+const webp         = require("gulp-webp");
+const svgstore     = require("gulp-svgstore");
+const del          = require("del");
+const debug        = require("gulp-debug");
+const newer        = require("gulp-newer");
+const notify       = require("gulp-notify");
 
 gulp.task("clean", function() { //удаляем папку build перед сборкой
   return del("build");
@@ -89,10 +89,10 @@ gulp.task("stylesNormalize", function() { //конвертация scss в css �
 });
 
 gulp.task("copyCssImages", function() { //копирование картинок подключаемых в scss в css и оптимизация
-  return gulp.src("source/sass/**/*.{svg,png}",
+  return gulp.src("source/sass/**/*.{svg,png,jpg}",
     {
-      base: "source/sass",
-      since: gulp.lastRun("copyCssImages")
+      base: "source/sass"
+      //since: gulp.lastRun("copyCssImages")
     })
   .pipe(newer("build/css"))
   .pipe(imagemin([
@@ -112,8 +112,8 @@ gulp.task("copyCssImages", function() { //копирование картино�
 gulp.task("copyImages", function() { //копирование картинок подключаемых в html и оптимизация
   return gulp.src("source/img/**/*.{svg,png,jpg}",
     {
-      base: "source",
-      since: gulp.lastRun("copyImages")
+      base: "source"
+      //since: gulp.lastRun("copyImages")
     })
   .pipe(newer("build"))
   .pipe(imagemin([
@@ -146,6 +146,8 @@ gulp.task("watch", function() {
   gulp.watch("source/sass/normalize.scss", gulp.series("stylesNormalize"));
 
   gulp.watch("source/**/*.html", gulp.series("copyHtml"));
+
+  gulp.watch("source/js/**/*.js", gulp.series("scripts"));
 
   gulp.watch("source/sass/**/*.{svg,png}", gulp.series("copyCssImages"));
 

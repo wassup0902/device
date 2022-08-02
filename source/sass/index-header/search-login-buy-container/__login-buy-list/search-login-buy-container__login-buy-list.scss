@@ -1,0 +1,16 @@
+.search-login-buy-container__login-buy-list {
+  width:            100%;
+  max-width:        100%;
+
+  li {
+    margin-bottom:  10px;
+  }
+
+  li:first-child {
+    margin-right:   auto;
+  }
+
+  li:not(:first-child) {
+    margin-left:    40px;
+  }
+}

@@ -1,0 +1,13 @@
+.dgc-navigation__link:focus{
+  color:               #F7E184;
+
+  &::after {
+    left:              0;
+    top:               0;
+
+    height:            100%;
+    width:             278px;
+
+    background-color:  #000000;
+  }
+}

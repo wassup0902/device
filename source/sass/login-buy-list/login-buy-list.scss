@@ -4,20 +4,6 @@
   justify-content:  flex-end;
   margin:           0;
   padding:          0;
-  width:            100%;
-  max-width:        100%;
 
   list-style:       none;
-
-  li {
-    margin-bottom:  10px;
-  }
-
-  li:first-child {
-    margin-right:   auto;
-  }
-
-  li:not(:first-child) {
-    margin-left:    40px;
-  }
 }
