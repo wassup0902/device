@@ -1,0 +1,17 @@
+.navigation-menu__item_equal {
+  &:last-child {
+    margin-left: initial;
+  }
+
+  &:not(:first-child):not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &:first-child {
+  width:          initial;
+  }
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}

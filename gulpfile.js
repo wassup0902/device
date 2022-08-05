@@ -50,17 +50,17 @@ gulp.task("stylesIndex", function() { //конвертация scss в css и м
       };
     })
   }))
-  .pipe(sourcemap.init())
+  //.pipe(sourcemap.init())
   .pipe(sass())
   .pipe(postcss([
     autoprefixer()
     ]))
-  .pipe(rename("index.css"))
-  .pipe(sourcemap.write("."))
-  .pipe(gulp.dest("build/css"))
+  //.pipe(rename("index.css"))
+  //.pipe(sourcemap.write("."))
+  //.pipe(gulp.dest("build/css"))
   .pipe(csso())
   .pipe(rename("index.min.css"))
-  .pipe(sourcemap.write("."))
+  //.pipe(sourcemap.write("."))
   .pipe(gulp.dest("build/css"))
 });
 
@@ -74,17 +74,17 @@ gulp.task("stylesNormalize", function() { //конвертация scss в css �
       };
     })
   }))
-  .pipe(sourcemap.init())
+  //.pipe(sourcemap.init())
   .pipe(sass())
   .pipe(postcss([
     autoprefixer()
     ]))
-  .pipe(rename("normalize.css"))
-  .pipe(sourcemap.write("."))
-  .pipe(gulp.dest("build/css"))
+  //.pipe(rename("normalize.css"))
+  //.pipe(sourcemap.write("."))
+  //.pipe(gulp.dest("build/css"))
   .pipe(csso())
   .pipe(rename("normalize.min.css"))
-  .pipe(sourcemap.write("."))
+  //.pipe(sourcemap.write("."))
   .pipe(gulp.dest("build/css"))
 });
 

@@ -1,0 +1,7 @@
+.social-list__item {
+  opacity:        0.3;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}

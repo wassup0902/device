@@ -1,6 +1,8 @@
 var delivery = document.querySelector(".js-delivery");
 var guarantee = document.querySelector(".js-guarantee");
 var credit = document.querySelector(".js-credit");
+var popupWrite = document.querySelector(".modal-writeus");
+var popup = document.querySelector(".modal-map");
 
 var dgc1 = document.querySelector(".dgc-list__item:nth-child(1)");
 var dgc2 = document.querySelector(".dgc-list__item:nth-child(2)");
@@ -8,6 +10,13 @@ var dgc3 = document.querySelector(".dgc-list__item:nth-child(3)");
 
 delivery.addEventListener("click", function (evt) {
   evt.preventDefault();
+  if(popup.classList.contains("modal-map_show")){
+    popup.classList.remove("modal-map_show");
+  }
+  if(popupWrite.classList.contains("modal-writeus_show")){
+    popupWrite.classList.remove("modal-writeus_show");
+  }
+
   if(dgc2.classList.contains("dgc-list__item_show")){
     dgc2.classList.remove("dgc-list__item_show");
   }
@@ -30,6 +39,13 @@ delivery.addEventListener("click", function (evt) {
 
 guarantee.addEventListener("click", function (evt) {
   evt.preventDefault();
+  if(popup.classList.contains("modal-map_show")){
+    popup.classList.remove("modal-map_show");
+  }
+  if(popupWrite.classList.contains("modal-writeus_show")){
+    popupWrite.classList.remove("modal-writeus_show");
+  }
+
   if(dgc1.classList.contains("dgc-list__item_show")){
     dgc1.classList.remove("dgc-list__item_show");
   }
@@ -52,6 +68,13 @@ guarantee.addEventListener("click", function (evt) {
 
 credit.addEventListener("click", function (evt) {
   evt.preventDefault();
+  if(popup.classList.contains("modal-map_show")){
+    popup.classList.remove("modal-map_show");
+  }
+  if(popupWrite.classList.contains("modal-writeus_show")){
+    popupWrite.classList.remove("modal-writeus_show");
+  }
+
   if(dgc1.classList.contains("dgc-list__item_show")){
     dgc1.classList.remove("dgc-list__item_show");
   }

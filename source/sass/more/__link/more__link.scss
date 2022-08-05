@@ -1,14 +1,22 @@
 .more__link {
-  position:       relative;
+  position:        relative;
 
-  display:        block;
-  padding:        10px 40px;
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  box-sizing:      border-box;
+  min-height:      40px;
+  min-width:       220px;
+  border:          none;
+
   font: {
-    family:       "Gilroy ExtraBold", Gilroy, sans-serif;
-    size:         18px;
+    family:        "Gilroy ExtraBold", Gilroy, sans-serif;
+    size:          18px;
   }
-  text-transform: uppercase;
-  line-height:    24px;
-  letter-spacing: 0.2em;
-  color:          #000000;
+  text-transform:  uppercase;
+  line-height:     24px;
+  letter-spacing:  0.2em;
+  color:           #000000;
+
+  background-color: transparent;
 }

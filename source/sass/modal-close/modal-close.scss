@@ -1,0 +1,16 @@
+.modal-close {
+  position:         absolute;
+  top:              22px;
+  right:            22px;
+
+  display:          flex;
+  justify-content:  center;
+  align-items:      center;
+  width:            55px;
+  height:           55px;
+  border-radius:    50%;
+
+  background-color: #DFC97E;
+  cursor:           pointer;
+  box-shadow:       0 0 10px rgba(0, 0, 0, 1.0);
+}
