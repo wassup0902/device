@@ -1,3 +1,8 @@
 .modal-close:focus {
   background-color: #F0C52E;
+
+  &::after,
+  &::before {
+  background-color: #FFFFFF;
+  }
 }

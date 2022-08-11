@@ -1,10 +1,22 @@
 .heading {
-  position:       relative;
+  position:           relative;
 
   font: {
-    family:       "Gilroy ExtraBold", Gilroy, sans-serif;
-    size:         47px;
+    family:           "Gilroy ExtraBold", Gilroy, sans-serif;
+    size:             47px;
   }
-  line-height:    48px;
-  letter-spacing: 0.21px;
+  line-height:        48px;
+  letter-spacing:     0.21px;
+
+  &::before {
+    content:          "";
+
+    position:         absolute;
+    top:              0;
+
+    width:            80px;
+    height:           7px;
+
+    background-color: #000000;
+  }
 }

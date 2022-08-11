@@ -1,3 +1,8 @@
 .modal-close:active {
   background-color: #FBEEC0;
+
+  &::after,
+  &::before {
+  background-color: #BABABA;
+  }
 }

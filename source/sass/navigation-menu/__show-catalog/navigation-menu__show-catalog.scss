@@ -1,13 +1,27 @@
 .navigation-menu__show-catalog {
-  position: relative;
-  padding-right: 30px;
+  position:            relative;
+  padding-right:       30px;
 
   font: {
-    family: "Gilroy ExtraBold", Gilroy, sans-serif;
-    size: 18px;
+    family:            "Gilroy ExtraBold", Gilroy, sans-serif;
+    size:              18px;
   }
-  line-height: 24px;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  color: #000000;
+  line-height:         24px;
+  letter-spacing:      0.2em;
+  text-transform:      uppercase;
+  color:               #000000;
+
+  &::after {
+    content:           "";
+
+    position:          absolute;
+    top:               3px;
+    right:             0;
+
+    width:             16px;
+    height:            16px;
+
+    background-image:  url("./navigation-menu/__show-catalog/plus.svg");
+    background-repeat: no-repeat;
+  }
 }

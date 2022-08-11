@@ -40,12 +40,12 @@ gulp.task("copyFonts", function() { //копируем шрифты
   .pipe(gulp.dest("build"))
 });
 
-gulp.task("stylesIndex", function() { //конвертация scss в css и минификация
-  return gulp.src("source/sass/index.scss")
+gulp.task("styles", function() { //конвертация scss в css и минификация
+  return gulp.src("source/sass/styles.scss")
   .pipe(plumber({
     errorHandler: notify.onError(function(err) {
       return {
-        title: "stylesIndex",
+        title: "styles",
         message: err.message
       };
     })
@@ -55,11 +55,11 @@ gulp.task("stylesIndex", function() { //конвертация scss в css и м
   .pipe(postcss([
     autoprefixer()
     ]))
-  //.pipe(rename("index.css"))
+  //.pipe(rename("styles.css"))
   //.pipe(sourcemap.write("."))
   //.pipe(gulp.dest("build/css"))
   .pipe(csso())
-  .pipe(rename("index.min.css"))
+  .pipe(rename("styles.min.css"))
   //.pipe(sourcemap.write("."))
   .pipe(gulp.dest("build/css"))
 });
@@ -138,10 +138,10 @@ gulp.task("scripts", function () {
   .pipe(browsersync.stream())
 });
 
-gulp.task("build", gulp.series("clean", gulp.parallel("copyHtml", "stylesIndex", "stylesNormalize", "copyFonts", "copyCssImages", "copyImages", "scripts")));
+gulp.task("build", gulp.series("clean", gulp.parallel("copyHtml", "styles", "stylesNormalize", "copyFonts", "copyCssImages", "copyImages", "scripts")));
 
 gulp.task("watch", function() {
-  gulp.watch("{source/sass/**/*.scss, !source/sass/normalize.scss}", gulp.series("stylesIndex"));
+  gulp.watch("{source/sass/**/*.scss, !source/sass/normalize.scss}", gulp.series("styles"));
 
   gulp.watch("source/sass/normalize.scss", gulp.series("stylesNormalize"));
 

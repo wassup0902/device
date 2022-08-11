@@ -1,18 +1,30 @@
 .slider__counter {
-  position:        relative;
+  position:            relative;
 
-  display:         flex;
-  justify-content: flex-end;
-  align-items:     center;
-  margin:          0;
-  padding:         0;
-  margin-top:      -60px;
+  display:             flex;
+  justify-content:     flex-end;
+  align-items:         center;
+  margin:              0;
+  padding:             0;
+  margin-top:          -60px;
 
   font: {
-    family:       "Gilroy ExtraBold", Gilroy, sans-serif;
-    size:         180px;
+    family:           "Gilroy ExtraBold", Gilroy, sans-serif;
+    size:             180px;
   }
-  line-height:    180px;
-  letter-spacing: 0.002em;
-  color:          #FFFFFF;
+  line-height:        180px;
+  letter-spacing:     0.002em;
+  color:              #FFFFFF;
+
+  &::before {
+    content:          "";
+
+    position:         absolute;
+    left:             0;
+
+    width:            100px;
+    height:           8px;
+
+    background-color: #FFFFFF;
+  }
 }
