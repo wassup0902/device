@@ -1,0 +1,8 @@
+.catalog-content__content-filter-list-arrow {
+  position:      absolute;
+  right:         0;
+
+  li:not(:first-child) {
+    margin-left: 20px;
+  }
+}
