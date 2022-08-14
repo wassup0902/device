@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="index" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
@@ -20,10 +20,10 @@
           <button class="search__button" type="button">Найти</button>
         </div>
 
-        <ul class="search-authorized-buy-container__login-buy-list login-buy-list">
-          <li><a class="login-buy-list__link login-buy-list__link_login" href="#">Войти</a></li>
-          <li><a class="login-buy-list__link login-buy-list__link_compare" href="#">Сравнить</a></li>
-          <li><a class="login-buy-list__link login-buy-list__link_cart" href="#">Корзина</a></li>
+        <ul class="search-login-buy-container__login-buy-list login-buy-list">
+          <li class="login-buy-list__item"><a class="login-buy-list__link login-buy-list__link_login" href="#">Войти</a></li>
+          <li class="login-buy-list__item"><a class="login-buy-list__link login-buy-list__link_compare" href="#">Сравнить</a></li>
+          <li class="login-buy-list__item"><a class="login-buy-list__link login-buy-list__link_cart" href="#">Корзина</a></li>
         </ul>
       </div>
 
@@ -75,7 +75,7 @@
               <div class="slider__more more">
                 <a class="more__link" href="#">Подробнее</a>
               </div>
-              <table class="slider__parametres">
+              <table>
                 <tr>
                   <td class="slider__parametres-description">8,5 м</td>
                   <td class="slider__parametres-description">5 кг</td>
@@ -138,7 +138,7 @@
         </ul>
       </section>
 
-      <section class="index-main__catalog">
+      <section class="index-main__catalog-list">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">
           <li>
@@ -192,7 +192,7 @@
         </ul>
       </section>
 
-      <section class=" index-main__dgc dgc">
+      <section class="index-main__dgc dgc">
         <h2 class="visually-hidden">Информация о доставке, гарантии и кредите.</h2>
         <div class="dgc__container">
           <ul class="dgc-navigation dgc__navigation">
@@ -277,20 +277,20 @@
 
     <footer class="index-footer">
       <div class="index-footer__footer-row footer-row footer-row_bottom">
-        <div class="index-footer__footer-column-left">
+        <div class="footer-row__footer-column-left">
           <a class="logo" href="index.html">
             <img src="css/logo/logo-yellow.svg" width="164" height="36">
           </a>
           <p>г.Москва, ул. Строителей, 15</p>
         </div>
 
-        <ul class="index-footer__footer-column-center navigation-menu navigation-menu_equal">
+        <ul class="footer-row__footer-column-center navigation-menu navigation-menu_equal">
           <li class="navigation-menu__item_equal"><a class="navigation-menu__link navigation-menu__link_white" href="#">Доставка</a></li>
           <li class="navigation-menu__item_equal"><a class="navigation-menu__link navigation-menu__link_white" href="#">Гарантия</a></li>
           <li class="navigation-menu__item_equal"><a class="navigation-menu__link navigation-menu__link_white" href="#">Контакты</a></li>
         </ul>
 
-        <div class="index-footer__footer-column-right">
+        <div class="footer-row__footer-column-right">
           <ul class="index-footer__login-buy-list login-buy-list">
             <li><a class="login-buy-list__link login-buy-list__link_white login-buy-list__link_login login-buy-list__link_login_yellow" href="#">Войти</a></li>
             <li><a class="login-buy-list__link login-buy-list__link_white login-buy-list__link_compare login-buy-list__link_compare_yellow" href="#">Сравнить</a></li>
@@ -303,18 +303,18 @@
 
       <div class="index-footer__footer-row footer-row footer-row_center">
 
-        <div class="index-footer__footer-column-left">
-          <img src="css/index-footer/yellow-line.png">
+        <div class="footer-row__footer-column-left">
+          <img src="css/footer-row/yellow-line.png">
         </div>
 
-        <ul class="index-footer__footer-column-center social-list">
-          <li class="social-list__item"><a href="#"><img src="css/index-footer/social-list/__item/fb.svg"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li class="social-list__item"><a href="#"><img src="css/index-footer/social-list/__item/instagram.svg"><span class="visually-hidden">Инстаграм</span></a></li>
-          <li class="social-list__item"><a href="#"><img src="css/index-footer/social-list/__item/twitter.svg"><span class="visually-hidden">Твиттер</span></a></li>
+        <ul class="footer-row__footer-column-center social-list">
+          <li class="social-list__item"><a href="#"><img src="css/social-list/__item/fb.svg"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="social-list__item"><a href="#"><img src="css/social-list/__item/instagram.svg"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li class="social-list__item"><a href="#"><img src="css/social-list/__item/twitter.svg"><span class="visually-hidden">Твиттер</span></a></li>
         </ul>
 
-        <a class="index-footer__footer-column-right logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="css/index-footer/logo-html.svg">
+        <a class="footer-row__footer-column-right logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="css/footer-row/logo-html.svg">
           <span class="visually-hidden">Интенсив "Профессиональный HTML и CSS, уровень 1.</span>
         </a>
       </div>

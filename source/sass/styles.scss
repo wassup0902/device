@@ -1,15 +1,14 @@
 @import "fonts.scss";
 @import "global/global.scss";
 
-@import "index-header/index-header.scss";
-
-@import "index-header/__logo/index-header__logo.scss";
+@import "containers/index-header.scss";
+@import "containers/index-header__logo.scss";
 @import "logo/_hover/logo_hover.scss";
 @import "logo/_focus/logo_focus.scss";
 @import "logo/_active/logo_active.scss";
 
-@import "index-header/search-login-buy-container/search-login-buy-container.scss";
-@import "index-header/search-login-buy-container/__search/search-login-buy-container__search.scss";
+@import "containers/search-login-buy-container.scss";
+@import "containers/search-login-buy-container__search.scss";
 @import "search/search.scss";
 @import "search/__input/search__input.scss";
 @import "search/__input/_hover/search__input_hover.scss";
@@ -19,11 +18,13 @@
 @import "search/__button/_focus/search__button_focus.scss";
 @import "search/__button/_active/search__button_active.scss";
 
-@import "index-header/search-login-buy-container/__login-buy-list/search-login-buy-container__login-buy-list.scss";
-@import "index-header/search-authorized-buy-container/__login-buy-list/search-authorized-buy-container__login-buy-list.scss";
+@import "containers/search-login-buy-container__login-buy-list.scss";
+@import "containers/search-authorized-buy-container__login-buy-list.scss";
+@import "containers/index-footer__login-buy-list.scss";
+@import "containers/index-footer__login-buy-list_authorized.scss";
 @import "login-buy-list/login-buy-list.scss";
-@import "index-footer/__login-buy-list/index-footer__login-buy-list.scss";
-@import "index-footer/__login-buy-list/_authorized/index-footer__login-buy-list_authorized.scss";
+@import "login-buy-list/__item/login-buy-list__item.scss";
+@import "login-buy-list/__item-authorized/login-buy-list__item-authorized.scss";
 @import "login-buy-list/__link/login-buy-list__link.scss";
 @import "login-buy-list/__link/_cart/login-buy-list__link_cart.scss";
 @import "login-buy-list/__link/_cart/_yellow/login-buy-list__link_cart_yellow.scss";
@@ -50,18 +51,18 @@
 @import "navigation-menu/__link/_focus/navigation-menu__link_focus.scss";
 @import "navigation-menu/__link/_active/navigation-menu__link_active.scss";
 @import "navigation-menu/__link/_white/navigation-menu__link_white.scss";
-@import "navigation-menu/__catalog-menu/navigation-menu__catalog-menu.scss";
+
+@import "containers/navigation-menu__catalog-menu.scss";
 @import "navigation-menu/catalog-menu/catalog-menu.scss";
 @import "navigation-menu/catalog-menu/__column/catalog-menu__column.scss";
 @import "navigation-menu/catalog-menu/__column-wm/catalog-menu__column-wm.scss";
+@import "navigation-menu/catalog-menu/navigation-menu-sublist/navigation-menu-sublist.scss";
+@import "navigation-menu/catalog-menu/navigation-menu-sublist/__link/navigation-menu-sublist__link.scss";
+@import "navigation-menu/catalog-menu/navigation-menu-sublist/__link/_hover/navigation-menu-sublist__link_hover.scss";
+@import "navigation-menu/catalog-menu/navigation-menu-sublist/__link/_focus/navigation-menu-sublist__link_focus.scss";
+@import "navigation-menu/catalog-menu/navigation-menu-sublist/__link/_active/navigation-menu-sublist__link_active.scss";
 
-@import "navigation-menu-sublist/navigation-menu-sublist.scss";
-@import "navigation-menu-sublist/__link/navigation-menu-sublist__link.scss";
-@import "navigation-menu-sublist/__link/_hover/navigation-menu-sublist__link_hover.scss";
-@import "navigation-menu-sublist/__link/_focus/navigation-menu-sublist__link_focus.scss";
-@import "navigation-menu-sublist/__link/_active/navigation-menu-sublist__link_active.scss";
-
-@import "index-main/__slider-container/index-main__slider-container.scss";
+@import "containers/index-main__slider-container.scss";
 @import "slider/slider.scss";
 @import "slider/__left/slider__left.scss";
 @import "slider/__right/slider__right.scss";
@@ -71,21 +72,20 @@
 @import "slider/__title/slider__title.scss";
 @import "slider/__description/slider__description.scss";
 @import "slider/__parametres-name/slider__parametres-name.scss";
-@import "slider/__parametres/slider__parametres.scss";
 @import "slider/__parametres-description/slider__parametres-description.scss";
 @import "slider/__more/slider__more.scss";
+@import "slider/__radio-indicator/slider__radio-indicator.scss";
 @import "more/more.scss";
 @import "more/__link/more__link.scss";
 @import "more/__link/_hover/more__link_hover.scss";
 @import "more/__link/_focus/more__link_focus.scss";
 @import "more/__link/_active/more__link_active.scss";
-@import "slider/__radio-indicator/slider__radio-indicator.scss";
 @import "radio-indicator/radio-indicator.scss";
 @import "radio-indicator/__label/radio-indicator__label.scss";
 @import "radio-indicator/__button/radio-indicator__button.scss";
 @import "radio-indicator/__button/_checked/radio-indicator__button_checked.scss";
 
-@import "index-main/__catalog/index-main__catalog.scss";
+@import "containers/index-main__catalog-list.scss";
 @import "catalog-list/catalog-list.scss";
 @import "catalog-list/__img-container/catalog-list__img-container.scss";
 @import "catalog-list/__name-link/catalog-list__name-link.scss";
@@ -93,9 +93,10 @@
 @import "catalog-list/__link/_focus/catalog-list__link_focus.scss";
 @import "catalog-list/__link/_active/catalog-list__link_active.scss";
 
+@import "containers/index-main__dgc.scss";
 @import "dgc/dgc.scss";
-@import "dgc/dgc-navigation/dgc-navigation.scss";
 @import "dgc/__navigation/dgc__navigation.scss";
+@import "dgc/dgc-navigation/dgc-navigation.scss";
 @import "dgc/dgc-navigation/__link/dgc-navigation__link.scss";
 @import "dgc/dgc-navigation/__link/_hover/dgc-navigation__link_hover.scss";
 @import "dgc/dgc-navigation/__link/_focus/dgc-navigation__link_focus.scss";
@@ -108,18 +109,17 @@
 @import "dgc/dgc-list/__item/_show/dgc-list__item_show.scss";
 @import "dgc/dgc-list/__title/dgc-list__title.scss";
 @import "dgc/dgc-list/__description/dgc-list__description.scss";
-@import "dgc/__container/dgc__container.scss";
-@import "index-main/__dgc/index-main__dgc.scss";
+@import "containers/dgc__container.scss";
 
-@import "index-main/__logos/index-main__logos.scss";
+@import "containers/index-main__logos.scss";
 @import "logos/logos.scss";
 @import "logos/__item/logos__item.scss";
 @import "logos/__item/_hover/logos__item_hover.scss";
 
-@import "index-main/__about-n-contacts/index-main__about-n-contacts.scss";
+@import "containers/index-main__about-n-contacts.scss";
 @import "about-n-contacts/about-n-contacts.scss";
 @import "about-n-contacts/about/about.scss";
-@import "about-n-contacts/__contacts/about-n-contacts__contacts.scss";
+@import "containers/about-n-contacts__contacts.scss";
 @import "about-n-contacts/company-list/company-list.scss";
 @import "heading/heading.scss";
 @import "heading/_top/heading_top.scss";
@@ -127,25 +127,25 @@
 @import "about-n-contacts/about/__company-list/about__company-list.scss";
 @import "about-n-contacts/company-list/__item/company-list__item.scss";
 
-@import "index-main/__two-buttons-container/index-main__two-buttons-container.scss";
+@import "containers/index-main__two-buttons-container.scss";
 @import "about-n-contacts/two-buttons-container/__more-link/two-buttons-container__more-link.scss";
 @import "about-n-contacts/two-buttons-container/two-buttons-container.scss";
 @import "about-n-contacts/two-buttons-container/__more-right/two-buttons-container__more-right.scss";
 
-@import "index-footer/index-footer.scss";
-@import "index-footer/footer-row/footer-row.scss";
-@import "index-footer/__footer-row/index-footer__footer-row.scss";
-@import "index-footer/footer-row/_center/footer-row_center.scss";
-@import "index-footer/footer-row/_bottom/footer-row_bottom.scss";
-@import "index-footer/__footer-column-left/index-footer__footer-column-left.scss";
-@import "index-footer/__footer-column-center/index-footer__footer-column-center.scss";
-@import "index-footer/__footer-column-right/index-footer__footer-column-right.scss";
+@import "containers/index-footer.scss";
+@import "containers/index-footer__footer-row.scss";
+@import "footer-row/footer-row.scss";
+@import "footer-row/_center/footer-row_center.scss";
+@import "footer-row/_bottom/footer-row_bottom.scss";
+@import "footer-row/__footer-column-left/footer-row__footer-column-left.scss";
+@import "footer-row/__footer-column-center/footer-row__footer-column-center.scss";
+@import "footer-row/__footer-column-right/footer-row__footer-column-right.scss";
 
-@import "index-footer/social-list/social-list.scss";
-@import "index-footer/social-list/__item/social-list__item.scss";
-@import "index-footer/social-list/__item/_hover/social-list__item_hover.scss";
-@import "index-footer/social-list/__item/_focus/social-list__item_focus.scss";
-@import "index-footer/social-list/__item/_active/social-list__item_active.scss";
+@import "social-list/social-list.scss";
+@import "social-list/__item/social-list__item.scss";
+@import "social-list/__item/_hover/social-list__item_hover.scss";
+@import "social-list/__item/_focus/social-list__item_focus.scss";
+@import "social-list/__item/_active/social-list__item_active.scss";
 
 @import "modal-map/modal-map.scss";
 @import "modal-map/_show/modal-map_show.scss";
@@ -165,26 +165,26 @@
 @import "modal-writeus/__input/_large/_focus/modal-writeus__input_large_focus.scss";
 @import "modal-writeus/__input/_large/_invalid/modal-writeus__input_large_invalid.scss";
 
-@import "catalog-main/__catalog-top-navigation/catalog-main__catalog-top-navigation.scss";
-@import "catalog-main/catalog-top-navigation/__heading/catalog-top-navigation__heading.scss";
-@import "catalog-main/catalog-top-navigation/catalog-top-list/catalog-top-list.scss";
-@import "catalog-main/catalog-top-navigation/catalog-top-list/__link/catalog-top-list__link.scss";
-@import "catalog-main/catalog-top-navigation/catalog-top-list/__link/_hover/catalog-top-list__link_hover.scss";
-@import "catalog-main/catalog-top-navigation/catalog-top-list/__link/_focus/catalog-top-list__link_focus.scss";
-@import "catalog-main/catalog-top-navigation/catalog-top-list/__link/_active/catalog-top-list__link_active.scss";
-@import "catalog-main/catalog-top-navigation/catalog-top-list/__item/catalog-top-list__item.scss";
+@import "containers/catalog-main__catalog-top-navigation.scss";
+@import "catalog-top-navigation/__heading/catalog-top-navigation__heading.scss";
+@import "catalog-top-navigation/catalog-top-list/catalog-top-list.scss";
+@import "catalog-top-navigation/catalog-top-list/__link/catalog-top-list__link.scss";
+@import "catalog-top-navigation/catalog-top-list/__link/_hover/catalog-top-list__link_hover.scss";
+@import "catalog-top-navigation/catalog-top-list/__link/_focus/catalog-top-list__link_focus.scss";
+@import "catalog-top-navigation/catalog-top-list/__link/_active/catalog-top-list__link_active.scss";
+@import "catalog-top-navigation/catalog-top-list/__item/catalog-top-list__item.scss";
 
-@import "catalog-main/catalog-content/__top/catalog-content__top.scss";
-@import "catalog-main/catalog-content/__left-container/catalog-content__left-container.scss";
-@import "catalog-main/catalog-content/__right-container/catalog-content__right-container.scss";
-@import "catalog-main/catalog-content/__left/catalog-content__left.scss";
-@import "catalog-main/catalog-content/__right/catalog-content__right.scss";
-@import "catalog-main/catalog-content/__content-filter-list-arrow/catalog-content__content-filter-list-arrow.scss";
-@import "catalog-main/catalog-content/content-filter/__header/content-filter__header.scss";
-@import "catalog-main/catalog-content/content-filter/__subtitle/content-filter__subtitle.scss";
-@import "catalog-main/catalog-content/content-filter-list/content-filter-list.scss";
-@import "catalog-main/catalog-content/content-filter-list/__link/content-filter-list__link.scss";
-@import "catalog-main/catalog-content/content-filter-list/__link/_enabled/content-filter-list__link_enabled.scss";
-@import "catalog-main/catalog-content/content-filter-list-arrow/content-filter-list-arrow.scss";
-@import "catalog-main/catalog-content/content-filter-list-arrow/__link/content-filter-list-arrow__link.scss";
-@import "catalog-main/catalog-content/content-filter-list-arrow/__link/_enabled/content-filter-list-arrow__link_enabled.scss";
+@import "catalog-content/__top/catalog-content__top.scss";
+@import "catalog-content/__left-container/catalog-content__left-container.scss";
+@import "catalog-content/__right-container/catalog-content__right-container.scss";
+@import "catalog-content/__left/catalog-content__left.scss";
+@import "catalog-content/__right/catalog-content__right.scss";
+@import "catalog-content/__content-filter-list-arrow/catalog-content__content-filter-list-arrow.scss";
+@import "catalog-content/content-filter/__header/content-filter__header.scss";
+@import "catalog-content/content-filter/__subtitle/content-filter__subtitle.scss";
+@import "catalog-content/content-filter-list/content-filter-list.scss";
+@import "catalog-content/content-filter-list/__link/content-filter-list__link.scss";
+@import "catalog-content/content-filter-list/__link/_enabled/content-filter-list__link_enabled.scss";
+@import "catalog-content/content-filter-list-arrow/content-filter-list-arrow.scss";
+@import "catalog-content/content-filter-list-arrow/__link/content-filter-list-arrow__link.scss";
+@import "catalog-content/content-filter-list-arrow/__link/_enabled/content-filter-list-arrow__link_enabled.scss";
