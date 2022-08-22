@@ -1,11 +1,14 @@
-.content-filter__header {
-  margin:     0;
+.content-filter__header
+{
+    font: 
+    {
+        family: 'Gilroy ExtraBold', Gilroy, sans-serif;
+        size: 16px;
+    }
+    line-height: 24px;
 
-  font: {
-    family:       "Gilroy ExtraBold", Gilroy, sans-serif;
-    size:         16px;
-  }
-  line-height:    24px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+    margin: 0;
+
+    letter-spacing: .2em;
+    text-transform: uppercase;
 }

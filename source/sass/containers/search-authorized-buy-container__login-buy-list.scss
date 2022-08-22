@@ -1,17 +1,21 @@
-.search-authorized-buy-container__login-buy-list {
-  width:            100%;
+.search-authorized-buy-container__login-buy-list
+{
+    width: 100%;
 
-  li {
-    margin-bottom:  10px;
-  }
+    li
+    {
+        margin-bottom: 10px;
+    }
 
-  li:first-child,
-  li:nth-child(2) {
-    margin-right:   auto;
-  }
+    li:first-child,
+    li:nth-child(2)
+    {
+        margin-right: auto;
+    }
 
-  li:nth-last-child(1),
-  li:nth-last-child(2) {
-    margin-left:    40px;
-  }
+    li:nth-last-child(1),
+    li:nth-last-child(2)
+    {
+        margin-left: 40px;
+    }
 }

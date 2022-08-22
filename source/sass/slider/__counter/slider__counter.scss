@@ -1,30 +1,37 @@
-.slider__counter {
-  position:            relative;
+.slider__counter
+{
+    font: 
+    {
+        family: 'Gilroy ExtraBold', Gilroy, sans-serif;
+        size: 180px;
+    };
+    line-height: 180px;
 
-  display:             flex;
-  justify-content:     flex-end;
-  align-items:         center;
-  margin:              0;
-  padding:             0;
-  margin-top:          -60px;
+    position: relative;
 
-  font: {
-    family:           "Gilroy ExtraBold", Gilroy, sans-serif;
-    size:             180px;
-  }
-  line-height:        180px;
-  letter-spacing:     0.002em;
-  color:              #FFFFFF;
+    display: flex;
 
-  &::before {
-    content:          "";
+    margin: 0;
+    margin-top: -60px;
+    padding: 0;
 
-    position:         absolute;
-    left:             0;
+    letter-spacing: .002em;
 
-    width:            100px;
-    height:           8px;
+    color: #fff;
 
-    background-color: #FFFFFF;
-  }
+    justify-content: flex-end;
+    align-items: center;
+
+    &::before
+    {
+        position: absolute;
+        left: 0;
+
+        width: 100px;
+        height: 8px;
+
+        content: '';
+
+        background-color: #fff;
+    }
 }

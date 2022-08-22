@@ -1,13 +1,17 @@
-.catalog-list__link:active {
-  & > .catalog-list__name-link {
-    opacity: 0.3;
-  }
+.catalog-list__link:active
+{
+    & > .catalog-list__name-link
+    {
+        opacity: .3;
+    }
 
-  & .catalog-list__img-container > img {
-    opacity: 0.3;
-  }
+    & .catalog-list__img-container > img
+    {
+        opacity: .3;
+    }
 
-  & .catalog-list__img-container {
-    background-color: rgba(240, 197, 46, 1);
-  }
+    & .catalog-list__img-container
+    {
+        background-color: rgba(240, 197, 46, 1);
+    }
 }

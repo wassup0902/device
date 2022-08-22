@@ -1,10 +1,13 @@
-.catalog-top-navigation__heading {
-  margin-bottom:  25px;
+.catalog-top-navigation__heading
+{
+    font: 
+    {
+        family: 'Gilroy ExtraBold', 'Gilroy', sans-serif;
+        size: 47px;
+    }
+    line-height: 48px;
 
-  font: {
-    family:       "Gilroy ExtraBold", "Gilroy", sans-serif;
-    size:         47px;
-  }
-  line-height:    48px;
-  letter-spacing: 0.21px;
+    margin-bottom: 25px;
+
+    letter-spacing: .21px;
 }

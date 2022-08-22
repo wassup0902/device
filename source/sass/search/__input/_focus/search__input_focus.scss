@@ -1,9 +1,10 @@
-.search__input:focus {
-  border-bottom: 2px #000000 solid;
+.search__input:focus
+{
+    opacity: 1;
+    border-bottom: 2px #000 solid;
 
-  opacity:       1;
-
-  + .search__button {
-  visibility:    visible;
-  }
+    + .search__button
+    {
+        visibility: visible;
+    }
 }

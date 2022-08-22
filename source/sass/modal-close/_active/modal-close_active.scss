@@ -1,8 +1,10 @@
-.modal-close:active {
-  background-color: #FBEEC0;
+.modal-close:active
+{
+    background-color: #fbeec0;
 
-  &::after,
-  &::before {
-  background-color: #BABABA;
-  }
+    &::after,
+    &::before
+    {
+        background-color: #bababa;
+    }
 }

@@ -1,8 +1,10 @@
-.modal-close:focus {
-  background-color: #F0C52E;
+.modal-close:focus
+{
+    background-color: #f0c52e;
 
-  &::after,
-  &::before {
-  background-color: #FFFFFF;
-  }
+    &::after,
+    &::before
+    {
+        background-color: #fff;
+    }
 }

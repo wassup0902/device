@@ -1,42 +1,46 @@
-.modal-close {
-  position:           absolute;
-  top:                22px;
-  right:              22px;
+.modal-close
+{
+    position: absolute;
+    top: 22px;
+    right: 22px;
 
-  display:            flex;
-  justify-content:    center;
-  align-items:        center;
-  width:              55px;
-  height:             55px;
-  border-radius:      50%;
+    display: flex;
 
-  background-color:   #DFC97E;
-  cursor:             pointer;
-  box-shadow:         0 0 10px rgba(0, 0, 0, 1.0);
+    width: 55px;
+    height: 55px;
 
-  &::before {
-    content:          "";
+    cursor: pointer;
 
-    position:         absolute;
+    border-radius: 50%;
+    background-color: #dfc97e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
 
-    width:            40px;
-    height:           4px;
+    justify-content: center;
+    align-items: center;
 
-    background-color: #CDCDCD;
+    &::before
+    {
+        position: absolute;
 
-    transform:        rotate(45deg);
-  }
+        width: 40px;
+        height: 4px;
 
-  &::after {
-    content:          "";
+        content: '';
+        transform: rotate(45deg);
 
-    position:         absolute;
+        background-color: #cdcdcd;
+    }
 
-    width:            40px;
-    height:           4px;
+    &::after
+    {
+        position: absolute;
 
-    background-color: #CDCDCD;
+        width: 40px;
+        height: 4px;
 
-    transform:        rotate(-45deg);
-  }
+        content: '';
+        transform: rotate(-45deg);
+
+        background-color: #cdcdcd;
+    }
 }

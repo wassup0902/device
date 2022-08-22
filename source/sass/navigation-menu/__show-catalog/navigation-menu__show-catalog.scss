@@ -1,27 +1,33 @@
-.navigation-menu__show-catalog {
-  position:            relative;
-  padding-right:       30px;
+.navigation-menu__show-catalog
+{
+    font: 
+    {
+        family: 'Gilroy ExtraBold', Gilroy, sans-serif;
+        size: 18px;
+    }
+    line-height: 24px;
 
-  font: {
-    family:            "Gilroy ExtraBold", Gilroy, sans-serif;
-    size:              18px;
-  }
-  line-height:         24px;
-  letter-spacing:      0.2em;
-  text-transform:      uppercase;
-  color:               #000000;
+    position: relative;
 
-  &::after {
-    content:           "";
+    padding-right: 30px;
 
-    position:          absolute;
-    top:               3px;
-    right:             0;
+    letter-spacing: .2em;
+    text-transform: uppercase;
 
-    width:             16px;
-    height:            16px;
+    color: #000;
 
-    background-image:  url("./navigation-menu/__show-catalog/plus.svg");
-    background-repeat: no-repeat;
-  }
+    &::after
+    {
+        position: absolute;
+        top: 3px;
+        right: 0;
+
+        width: 16px;
+        height: 16px;
+
+        content: '';
+
+        background-image: url('./navigation-menu/__show-catalog/plus.svg');
+        background-repeat: no-repeat;
+    }
 }

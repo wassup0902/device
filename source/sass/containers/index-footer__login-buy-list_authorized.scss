@@ -1,13 +1,17 @@
-.index-footer__login-buy-list_authorized {
-  li:not(:first-child) {
-    margin-left: initial;
-  }
+.index-footer__login-buy-list_authorized
+{
+    li:not(:first-child)
+    {
+        margin-left: initial;
+    }
 
-  li:not(:first-child) {
-    margin-left: 40px;
-  }
+    li:not(:first-child)
+    {
+        margin-left: 40px;
+    }
 
-  li > .login-buy-list__link_quit {
-    margin-left: -20px;
-  }
+    li > .login-buy-list__link_quit
+    {
+        margin-left: -20px;
+    }
 }

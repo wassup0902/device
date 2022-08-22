@@ -1,12 +1,14 @@
-.content-filter-list__link {
-  font: {
-    family:       "Open Sans Regular", "Open Sans", sans-serif;
-    size:         14px;
-  }
-  line-height:    18px;
-  letter-spacing: 0;
+.content-filter-list__link
+{
+    font: 
+    {
+        family: 'Open Sans Regular', 'Open Sans', sans-serif;
+        size: 14px;
+    }
+    line-height: 18px;
 
-  color:          #000000;
+    letter-spacing: 0;
 
-  opacity:        0.3;
+    opacity: .3;
+    color: #000;
 }

@@ -1,11 +1,14 @@
-.index-footer__login-buy-list {
-  width:            100%;
+.index-footer__login-buy-list
+{
+    width: 100%;
 
-  li {
-    margin-bottom:  10px;
-  }
+    li
+    {
+        margin-bottom: 10px;
+    }
 
-  li:not(:first-child) {
-    margin-left:    40px;
-  }
+    li:not(:first-child)
+    {
+        margin-left: 40px;
+    }
 }

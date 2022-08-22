@@ -1,8 +1,10 @@
-.radio-indicator {
-  display:         flex;
-  flex-wrap:       wrap;
-  justify-content: space-around;
-  align-items:     center;
+.radio-indicator
+{
+    display: flex;
 
-  list-style:      none;
+    list-style: none;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }

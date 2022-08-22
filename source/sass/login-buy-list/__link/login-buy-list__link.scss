@@ -1,14 +1,21 @@
-.login-buy-list__link {
-  position:         relative;
-  display:          flex;
-  align-items:      center;
-  padding-left:     25px;
+.login-buy-list__link
+{
+    font: 
+    {
+        family: 'Open Sans Light', 'Open Sans', sans-serif;
+        size: 15px;
+    }
+    line-height: 30px;
 
-  font: {
-    family:         "Open Sans Light", "Open Sans", sans-serif;
-    size:           15px;
-  }
-  line-height:      30px;
-  letter-spacing:   0.01em;
-  color:            #000000;
+    position: relative;
+
+    display: flex;
+
+    padding-left: 25px;
+
+    letter-spacing: .01em;
+
+    color: #000;
+
+    align-items: center;
 }

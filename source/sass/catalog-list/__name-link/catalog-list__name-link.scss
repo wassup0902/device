@@ -1,9 +1,13 @@
-.catalog-list__name-link {
-  font: {
-  family:          "Gilroy ExtraBold", Gilroy, sans-serif;
-  size:            18px;
-  }
-  line-height:     24px;
-  letter-spacing:  0.01em;
-  color:           #000000;
+.catalog-list__name-link
+{
+    font: 
+    {
+        family: 'Gilroy ExtraBold', Gilroy, sans-serif;
+        size: 18px;
+    }
+    line-height: 24px;
+
+    letter-spacing: .01em;
+
+    color: #000;
 }

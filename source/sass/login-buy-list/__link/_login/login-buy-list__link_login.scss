@@ -1,10 +1,12 @@
-.login-buy-list__link_login::before {
-  content:    "";
+.login-buy-list__link_login::before
+{
+    position: absolute;
+    left: 0;
 
-  position:   absolute;
-  left:       0;
-  width:      13px;
-  height:     12px;
+    width: 13px;
+    height: 12px;
 
-  background: url("./login-buy-list/__link/_login/user.svg") no-repeat left center;
+    content: '';
+
+    background: url('./login-buy-list/__link/_login/user.svg') no-repeat left center;
 }

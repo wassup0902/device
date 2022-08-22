@@ -1,13 +1,15 @@
-.modal-writeus {
-  position:         fixed;
-  top:              25px;
-  right:            195px;
-  bottom:           25px;
-  left:             195px;
+.modal-writeus
+{
+    position: fixed;
+    top: 25px;
+    right: 195px;
+    bottom: 25px;
+    left: 195px;
 
-  display:          none;
-  padding:          80px 100px;
+    display: none;
 
-  box-shadow:       0 0 50px rgba(0, 0, 0, 1.0);
-  background-color: #CDCDCD;
+    padding: 80px 100px;
+
+    background-color: #cdcdcd;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1.0);
 }

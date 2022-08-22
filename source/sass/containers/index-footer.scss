@@ -1,16 +1,19 @@
-.index-footer {
-  min-height:       320px;
-  box-sizing:       border-box;
+.index-footer
+{
+    font: 
+    {
+        family: 'Open Sans Light', 'Open Sans', sans-serif;
+        size: 15px;
+    }
+    line-height: 30px;
 
-  font: {
-    family:         "Open Sans Light", "Open Sans", sans-serif;
-    size:           15px;
-  }
-  line-height:      30px;
+    box-sizing: border-box;
+    min-height: 320px;
 
-  & p {
-    color:          #FFFFFF;
-  }
+    background-color: #464646;
 
-  background-color: #464646;
+    & p
+    {
+        color: #fff;
+    }
 }

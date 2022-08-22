@@ -1,9 +1,12 @@
-.login-buy-list {
-  display:          flex;
-  flex-wrap:        wrap;
-  justify-content:  flex-end;
-  margin:           0;
-  padding:          0;
+.login-buy-list
+{
+    display: flex;
 
-  list-style:       none;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }

@@ -1,13 +1,16 @@
-.about-n-contacts {
-  display:         flex;
+.about-n-contacts
+{
+    font: 
+    {
+        family: 'Open Sans Light', 'Open Sans', sans-serif;
+        size: 15px;
+    };
+    line-height: 30px;
 
-  font: {
-    family:        "Open Sans Light", "Open Sans", sans-serif;
-    size:          15px;
-  }
-  line-height:     30px;
+    display: flex;
 
-  & p {
-    margin-bottom: 25px;
-  }
+    & p
+    {
+        margin-bottom: 25px;
+    }
 }

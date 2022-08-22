@@ -1,7 +1,11 @@
-.catalog-content__right-container {
-  display:          flex;
-  flex:             1 0 830px;
-  box-sizing:       border-box;
-  min-height:       70px;
-  background-color: #EBEBEB;
+.catalog-content__right-container
+{
+    display: flex;
+
+    box-sizing: border-box;
+    min-height: 70px;
+
+    background-color: #ebebeb;
+
+    flex: 1 0 830px;
 }

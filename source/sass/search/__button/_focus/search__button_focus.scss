@@ -1,7 +1,7 @@
-.search__button:focus {
-  color:            #FFFFFF;
+.search__button:focus
+{
+    visibility: visible;
 
-  background-color: rgba(0, 0, 0, 1.0);
-
-  visibility:       visible;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 1.0);
 }

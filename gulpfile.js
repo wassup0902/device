@@ -15,9 +15,20 @@ const del          = require("del");
 const debug        = require("gulp-debug");
 const newer        = require("gulp-newer");
 const notify       = require("gulp-notify");
+const csscomb      = require('gulp-csscomb');
 
 gulp.task("clean", function() { //удаляем папку build перед сборкой
   return del("build");
+});
+
+gulp.task('csscomb', function() { //приводим код в божеский вид
+  return gulp.src('source/sass/**/*.scss',
+    {
+      base: "source/sass",
+      since: gulp.lastRun('csscomb')
+    })
+    .pipe(csscomb())
+    .pipe(gulp.dest('source/sass'));
 });
 
 gulp.task("copyHtml", function() { //копируем html страницы
@@ -27,7 +38,7 @@ gulp.task("copyHtml", function() { //копируем html страницы
       since: gulp.lastRun("copyHtml")
     })
   .pipe(newer("build"))
-  .pipe(gulp.dest("build"))
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("copyFonts", function() { //копируем шрифты
@@ -37,7 +48,7 @@ gulp.task("copyFonts", function() { //копируем шрифты
       since: gulp.lastRun("copyFonts")
     })
   .pipe(newer("build"))
-  .pipe(gulp.dest("build"))
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("styles", function() { //конвертация scss в css и минификация
@@ -61,7 +72,7 @@ gulp.task("styles", function() { //конвертация scss в css и мин�
   .pipe(csso())
   .pipe(rename("styles.min.css"))
   //.pipe(sourcemap.write("."))
-  .pipe(gulp.dest("build/css"))
+  .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("stylesNormalize", function() { //конвертация scss в css и минификация
@@ -85,7 +96,7 @@ gulp.task("stylesNormalize", function() { //конвертация scss в css �
   .pipe(csso())
   .pipe(rename("normalize.min.css"))
   //.pipe(sourcemap.write("."))
-  .pipe(gulp.dest("build/css"))
+  .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("copyCssImages", function() { //копирование картинок подключаемых в scss в css и оптимизация
@@ -106,7 +117,7 @@ gulp.task("copyCssImages", function() { //копирование картино�
       ]
     })
   ]))
-  .pipe(gulp.dest("build/css"))
+  .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("copyImages", function() { //копирование картинок подключаемых в html и оптимизация
@@ -127,7 +138,7 @@ gulp.task("copyImages", function() { //копирование картинок �
       ]
     })
   ]))
-  .pipe(gulp.dest("build"))
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("scripts", function () {
@@ -135,7 +146,7 @@ gulp.task("scripts", function () {
   .pipe(terser())
   //.pipe(rename("*.min.js"))
   .pipe(gulp.dest("build/js"))
-  .pipe(browsersync.stream())
+  .pipe(browsersync.stream());
 });
 
 gulp.task("build", gulp.series("clean", gulp.parallel("copyHtml", "styles", "stylesNormalize", "copyFonts", "copyCssImages", "copyImages", "scripts")));

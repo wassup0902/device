@@ -1,8 +1,8 @@
-.search__button:active {
-  color:            #FFFFFF;
+.search__button:active
+{
+    visibility: visible;
 
-  background-color: rgba(0, 0, 0, 0.5);
-  border:           none;
-
-  visibility:       visible;
+    color: #fff;
+    border: none;
+    background-color: rgba(0, 0, 0, .5);
 }

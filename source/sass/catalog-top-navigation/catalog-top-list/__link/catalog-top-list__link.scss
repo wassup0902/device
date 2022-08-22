@@ -1,11 +1,14 @@
-.catalog-top-list__link {
-  font: {
-    family:       "Open Sans Light", "Open Sans", sans-serif;
-    size:         14px;
-  }
-  line-height:    24px;
-  letter-spacing: 0.01em;
-  color:          #000000;
+.catalog-top-list__link
+{
+    font: 
+    {
+        family: 'Open Sans Light', 'Open Sans', sans-serif;
+        size: 14px;
+    }
+    line-height: 24px;
 
-  opacity:        0.3;
+    letter-spacing: .01em;
+
+    opacity: .3;
+    color: #000;
 }

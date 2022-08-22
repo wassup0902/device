@@ -1,7 +1,10 @@
-.catalog-content__left {
-  display:      flex;
-  align-items:  center;
-  box-sizing:   border-box;
-  width:        330px;
-  padding-left: 60px;
+.catalog-content__left
+{
+    display: flex;
+
+    box-sizing: border-box;
+    width: 330px;
+    padding-left: 60px;
+
+    align-items: center;
 }

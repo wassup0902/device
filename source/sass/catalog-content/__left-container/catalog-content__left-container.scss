@@ -1,8 +1,12 @@
-.catalog-content__left-container {
-  display:          flex;
-  justify-content:  flex-end;
-  flex:             1 0 330px;
-  box-sizing:       border-box;
-  min-height:       70px;
-  background-color: #DCDCDC;
+.catalog-content__left-container
+{
+    display: flex;
+
+    box-sizing: border-box;
+    min-height: 70px;
+
+    background-color: #dcdcdc;
+
+    justify-content: flex-end;
+    flex: 1 0 330px;
 }

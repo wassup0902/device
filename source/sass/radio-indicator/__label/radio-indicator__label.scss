@@ -1,9 +1,11 @@
-.radio-indicator__label {
-  position:        relative;
+.radio-indicator__label
+{
+    position: relative;
 
-  display:         flex;
-  align-items:     center;
-  justify-content: space-around;
+    display: flex;
 
-  cursor:          pointer;
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: space-around;
 }

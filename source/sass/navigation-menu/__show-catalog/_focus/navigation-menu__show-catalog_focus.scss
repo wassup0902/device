@@ -1,7 +1,9 @@
-.navigation-menu__show-catalog:focus {
-  opacity:   0.6;
+.navigation-menu__show-catalog:focus
+{
+    opacity: .6;
 
-  & + .catalog-menu {
-    display: flex;
-  }
+    & + .catalog-menu
+    {
+        display: flex;
+    }
 }

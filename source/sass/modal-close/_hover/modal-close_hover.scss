@@ -1,8 +1,10 @@
-.modal-close:hover {
-  background-color: #F0C52E;
+.modal-close:hover
+{
+    background-color: #f0c52e;
 
-  &::after,
-  &::before {
-  background-color: #FFFFFF;
-  }
+    &::after,
+    &::before
+    {
+        background-color: #fff;
+    }
 }

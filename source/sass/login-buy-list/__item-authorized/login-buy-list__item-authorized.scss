@@ -1,13 +1,16 @@
-.login-buy-list__item-authorized {
-  margin-bottom:  10px;
+.login-buy-list__item-authorized
+{
+    margin-bottom: 10px;
 
-  &:first-child,
-  &:nth-child(2) {
-    margin-right:   auto;
-  }
+    &:first-child,
+    &:nth-child(2)
+    {
+        margin-right: auto;
+    }
 
-  &:nth-last-child(1),
-  &:nth-last-child(2) {
-    margin-left:    40px;
-  }
+    &:nth-last-child(1),
+    &:nth-last-child(2)
+    {
+        margin-left: 40px;
+    }
 }

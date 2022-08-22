@@ -1,11 +1,14 @@
-.login-buy-list__item {
+.login-buy-list__item
+{
     margin-bottom: 10px;
 
-  &:first-child {
-    margin-right:  auto;
-  }
+    &:first-child
+    {
+        margin-right: auto;
+    }
 
-  &:not(:first-child) {
-    margin-left:   40px;
-  }
+    &:not(:first-child)
+    {
+        margin-left: 40px;
+    }
 }

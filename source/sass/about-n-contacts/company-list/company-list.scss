@@ -1,12 +1,14 @@
-.company-list {
-  margin:      0;
-  padding:     0;
+.company-list
+{
+    font: 
+    {
+        family: 'Gilroy ExtraBold', Gilroy, sans-serif;
+        size: 16px;
+    };
+    line-height: 40px;
 
-  font: {
-    family:    "Gilroy ExtraBold", Gilroy, sans-serif;
-    size:      16px;
-  }
-  line-height: 40px;
+    margin: 0;
+    padding: 0;
 
-  list-style:  none;
+    list-style: none;
 }
