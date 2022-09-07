@@ -1,0 +1,19 @@
+.pages
+{
+    font:
+    {
+        family: 'Gilroy ExtraBold', Gilroy, sans-serif;
+        size: 16px;
+    };
+    line-height: 24px;
+
+    display: flex;
+
+    width: 760px;
+    min-height: 70px;
+
+    background-color: #ebebeb;
+
+    justify-content: space-between;
+    align-items: center;
+}

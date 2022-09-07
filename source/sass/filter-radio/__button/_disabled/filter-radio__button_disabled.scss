@@ -1,0 +1,6 @@
+.filter-radio__button:disabled + .filter-radio__indicator
+{
+    cursor: default;
+
+    opacity: .6;
+}

@@ -1,0 +1,26 @@
+.goods-list__wrapper
+{
+    position: relative;
+
+    display: flex;
+
+    width: 360px;
+    height: 380px;
+
+    background-color: #eee;
+
+    justify-content: center;
+    align-items: center;
+    &:hover > .hover-links
+    {
+        position: absolute;
+
+        display: block;
+
+        text-align: center;
+    }
+    &:hover > img
+    {
+        background-color: #999;
+    }
+}

@@ -1,0 +1,6 @@
+.filter-checkbox__button:disabled + .filter-checkbox__indicator
+{
+    cursor: default;
+
+    opacity: .6;
+}

@@ -1,0 +1,17 @@
+.filter-radio__button:checked
+{
+    & + .filter-radio__indicator
+    {
+        background: url('./filter-radio/__button/_checked/filter-radio-on.svg') no-repeat top left;
+    }
+
+    &:hover + .filter-radio__indicator
+    {
+        opacity: .6;
+    }
+
+    &:focus + .filter-radio__indicator
+    {
+        opacity: .6;
+    }
+}

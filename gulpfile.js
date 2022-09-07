@@ -160,7 +160,7 @@ gulp.task("watch", function() {
 
   gulp.watch("source/js/**/*.js", gulp.series("scripts"));
 
-  gulp.watch("source/sass/**/*.{svg,png}", gulp.series("copyCssImages"));
+  gulp.watch("source/sass/**/*.{svg,png,jpg}", gulp.series("copyCssImages"));
 
   gulp.watch("source/img/**/*.{svg,png,jpg}", gulp.series("copyImages"));
 

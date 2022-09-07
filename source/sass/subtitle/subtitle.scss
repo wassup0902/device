@@ -1,0 +1,28 @@
+.subtitle
+{
+    font:
+    {
+        family: 'Gilroy ExtraBold', Gilroy, sans-serif;
+        size: 18px;
+    };
+    line-height: 24px;
+
+    position: relative;
+
+    margin: 0;
+
+    letter-spacing: .01em;
+
+    &::before
+    {
+        position: absolute;
+        top: 0;
+
+        width: 200px;
+        height: 2px;
+
+        content: '';
+
+        background-color: #000;
+    }
+}

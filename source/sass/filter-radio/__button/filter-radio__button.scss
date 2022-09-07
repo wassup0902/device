@@ -1,0 +1,10 @@
+.filter-radio__button + .filter-radio__indicator
+{
+    position: absolute;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+
+    background: url('./filter-radio/__button/filter-radio-off.svg') no-repeat top left;
+}

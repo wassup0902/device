@@ -1,0 +1,18 @@
+.pages__nav
+{
+    display: flex;
+
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    cursor: pointer;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+
+    opacity: .3;
+    border: none;
+    background-color: transparent;
+
+    align-items: center;
+}

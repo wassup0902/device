@@ -1,0 +1,10 @@
+.filter-checkbox__button + .filter-checkbox__indicator
+{
+    position: absolute;
+    left: 0;
+
+    width: 23px;
+    height: 23px;
+
+    background: url('./filter-checkbox/__button/filter-checkbox-off.svg') no-repeat top left;
+}

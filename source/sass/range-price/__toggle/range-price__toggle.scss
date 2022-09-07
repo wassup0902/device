@@ -1,0 +1,16 @@
+.range-price__toggle
+{
+    position: absolute;
+    top: -9px;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+    cursor: pointer;
+
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #ababab;
+    box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+}

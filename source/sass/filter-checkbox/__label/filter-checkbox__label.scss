@@ -1,0 +1,21 @@
+.filter-checkbox__label
+{
+    font:
+    {
+        family: 'Open Sans Light', 'Open Sans', sans-serif;
+        size: 14px;
+    };
+    line-height: 39px;
+
+    position: relative;
+
+    display: flex;
+
+    padding-left: 40px;
+
+    cursor: pointer;
+    letter-spacing: .01em;
+
+    justify-content: space-between;
+    align-items: center;
+}

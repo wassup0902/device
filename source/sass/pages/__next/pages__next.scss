@@ -1,0 +1,17 @@
+.pages__next
+{
+    display: flex;
+
+    box-sizing: border-box;
+    height: 70px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    cursor: pointer;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+
+    border: none;
+
+    align-items: center;
+}

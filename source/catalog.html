@@ -94,13 +94,126 @@
 
         <div class="catalog-content__bottom">
           <div class="catalog-content__left-bottom-container">
-            <div class="catalog-content__left">
+            <div class="catalog-content__left catalog-content__left_bottom">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p class="catalog-content__subtitle subtitle subtitle_top">Стоимость</p>
+                <div class="range-price">
+                  <div class="range-price__controls">
+                    <div class="range-price__scale">
+                      <div class="range-price__bar"></div>
+                    </div>
+                    <div class="range-price__toggle range-price__toggle_min"></div>
+                    <div class="range-price__toggle range-price__toggle_max"></div>
+                  </div>
+                  <label class="range-price__label" for="filter-min-price">от</label>
+                  <input class="range-price__input range-price__input_min" type="text" name="min-price" id="filter-min-price" value="0">
+                  <label class="range-price__label" for="filter-max-price">до</label>
+                  <input class="range-price__input" type="text" name="max-price" id="filter-max-price" value="5000">
+                </div>
+
+                <p class="catalog-content__subtitle subtitle subtitle_top">Цвет</p>
+                <ul class="filter-checkbox">
+                  <li><label class="filter-checkbox__label"><input class="visually-hidden filter-checkbox__button" type="checkbox" name="color-black" onclick="check()" checked><span role="checkbox" class="filter-checkbox__indicator"></span>Черный</label></li>
+                  <li><label class="filter-checkbox__label"><input class="visually-hidden filter-checkbox__button" type="checkbox" name="color-white" onclick="check()"><span role="checkbox" class="filter-checkbox__indicator"></span>Белый</label></li>
+                  <li><label class="filter-checkbox__label"><input class="visually-hidden filter-checkbox__button" type="checkbox" name="color-blue" onclick="check()" checked><span role="checkbox" class="filter-checkbox__indicator"></span>Синий</label></li>
+                  <li><label class="filter-checkbox__label"><input class="visually-hidden filter-checkbox__button" type="checkbox" name="color-red" onclick="check()" checked><span role="checkbox" class="filter-checkbox__indicator"></span>Красный</label></li>
+                  <li><label class="filter-checkbox__label"><input class="visually-hidden filter-checkbox__button" type="checkbox" name="color-pink" onclick="check()"><span role="checkbox" class="filter-checkbox__indicator"></span>Розовый</label></li>
+                </ul>
+
+                <p class="catalog-content__subtitle subtitle subtitle_top">Bluetooth</p>
+                <ul class="catalog-content__filter-radio filter-radio">
+                  <li><label class="filter-radio__label"><input class="visually-hidden filter-radio__button" type="radio" name="bluetooth" value="yes" onclick="checkr()" checked><span role="checkbox" class="filter-radio__indicator"></span>Есть</label></li>
+                  <li><label class="filter-radio__label"><input class="visually-hidden filter-radio__button" type="radio" name="bluetooth" value="no" onclick="checkr()"><span role="checkbox" class="filter-radio__indicator"></span>Нет</label></li>
+                </ul>
+
+                <div class="more">
+                  <button class="catalog-content__more-link more__link js-show" type="submit">Показать</button>
+                </div>
+              </form>
             </div>
           </div>
 
           <div class="catalog-content__right-bottom-container">
-            <div class="catalog-content__right">
+            <div class="catalog-content__right catalog-content__right_bottom">
+              <ul class="goods-list">
+                <li class="goods-list__item">
+                  <div class="goods-list__wrapper">
+                    <img src="css/goods-list/__wrapper/good1.png">
+                    <div class="goods-list__hover-links hover-links">
+                      <div class="more">
+                        <button class="hover-links__more-link more__link">В корзину</button>
+                      </div>
+                      <a class="hover-links__link" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                  <div class="goods-list__description">
+                    <p class="goods-list__name">Любительская селфи-палка</p>
+                    <p class="goods-list__price">500 руб.</p>
+                  </div>
+                </li>
+
+                <li class="goods-list__item">
+                  <div class="goods-list__wrapper">
+                    <img src="css/goods-list/__wrapper/good2.png">
+                    <div class="goods-list__hover-links hover-links">
+                      <div class="more">
+                        <button class="hover-links__more-link more__link">В корзину</button>
+                      </div>
+                      <a class="hover-links__link" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                  <div class="goods-list__description">
+                    <p class="goods-list__name">Профессиональная <br>селфи-палка</p>
+                    <p class="goods-list__price">1500 руб.</p>
+                  </div>
+                </li>
+
+                <li class="goods-list__item">
+                  <div class="goods-list__wrapper">
+                    <img src="css/goods-list/__wrapper/good3.png">
+                    <div class="goods-list__hover-links hover-links">
+                      <div class="more">
+                        <button class="hover-links__more-link more__link">В корзину</button>
+                      </div>
+                      <a class="hover-links__link" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                  <div class="goods-list__description">
+                    <p class="goods-list__name">Непотопляемая селфи-палка</p>
+                    <p class="goods-list__price">2500 руб.</p>
+                  </div>
+                </li>
+
+                <li class="goods-list__item">
+                  <div class="goods-list__wrapper">
+                    <img src="css/goods-list/__wrapper/good4.png">
+                    <div class="goods-list__hover-links hover-links">
+                      <div class="more">
+                        <button class="hover-links__more-link more__link">В корзину</button>
+                      </div>
+                      <a class="hover-links__link" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                  <div class="goods-list__description">
+                    <p class="goods-list__name">Селфи-палка &laquo;Следуй за <br>мной&raquo;</p>
+                    <p class="goods-list__price">4900 руб.</p>
+                  </div>
+                </li>
+              </ul>
+
+
             </div>
+
+            <div class="catalog-content__pages pages">
+              <button class="pages__prev">Назад</button>
+              <ul class="pages__list">
+                <li><button class="pages__nav pages__nav_enabled">1</button></li>
+                <li><button class="pages__nav">2</button></li>
+                <li><button class="pages__nav">3</button></li>
+              </ul>
+              <button class="pages__next">Вперед</button>
+            </div>
+
           </div>
         </div>
 
@@ -152,5 +265,10 @@
         </a>
       </div>
     </footer>
+
+    <script src="js/disabled-links.js"></script>
+    <script src="js/blur-buttons.js"></script>
+    <script src="js/default-checkbox.js"></script>
+    <script src="js/show-n-block.js"></script>
   </body>
 </html>

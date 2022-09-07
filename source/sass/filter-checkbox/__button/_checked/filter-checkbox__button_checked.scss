@@ -1,0 +1,19 @@
+.filter-checkbox__button:checked
+{
+    & + .filter-checkbox__indicator
+    {
+        width: 27px;
+
+        background: url('./filter-checkbox/__button/_checked/filter-checkbox-on.svg') no-repeat top left;
+    }
+
+    &:hover + .filter-checkbox__indicator
+    {
+        opacity: .6;
+    }
+
+    &:focus + .filter-checkbox__indicator
+    {
+        opacity: .6;
+    }
+}
